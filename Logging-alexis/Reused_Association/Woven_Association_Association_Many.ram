@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_PUtV4I84EeupeID-dfoOaA" name="Association&lt;Association,Many>">
+  <structuralView xmi:id="_PUtV4Y84EeupeID-dfoOaA">
+    <classes xsi:type="ram:Class" xmi:id="_PUtV4o84EeupeID-dfoOaA" name="Data" partiality="public" visibility="public">
+      <operations xmi:id="_PUtV4484EeupeID-dfoOaA" name="create" partiality="public" visibility="public" returnType="_PUtV4o84EeupeID-dfoOaA" operationType="Constructor"/>
+      <operations xmi:id="_PUtV5I84EeupeID-dfoOaA" name="contains" visibility="public" returnType="_PUtV9484EeupeID-dfoOaA">
+        <parameters xmi:id="_PUtV5Y84EeupeID-dfoOaA" name="a" type="_PUtV8I84EeupeID-dfoOaA"/>
+      </operations>
+      <operations xmi:id="_PUtV5o84EeupeID-dfoOaA" name="size" visibility="public" returnType="_PUtV-I84EeupeID-dfoOaA"/>
+      <operations xmi:id="_PUtV5484EeupeID-dfoOaA" name="getAssociated" visibility="public" returnType="_PUtV6Y84EeupeID-dfoOaA"/>
+      <associationEnds xmi:id="_PUtV6I84EeupeID-dfoOaA" name="collection" lowerBound="1" referenceType="Composition" assoc="_PUtV8484EeupeID-dfoOaA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_PUtV6Y84EeupeID-dfoOaA" name="CollectionOfAssociated" partiality="concern" visibility="public">
+      <operations xmi:id="_PUtV6o84EeupeID-dfoOaA" name="create" partiality="concern" extendedVisibility="package" returnType="_PUtV6Y84EeupeID-dfoOaA" operationType="Constructor"/>
+      <operations xmi:id="_PUtV6484EeupeID-dfoOaA" name="contains" partiality="concern" extendedVisibility="package" returnType="_PUtV9484EeupeID-dfoOaA">
+        <parameters xmi:id="_PUtV7I84EeupeID-dfoOaA" name="o" type="_PUtV8o84EeupeID-dfoOaA"/>
+      </operations>
+      <operations xmi:id="_PUtV7Y84EeupeID-dfoOaA" name="size" partiality="concern" extendedVisibility="package" returnType="_PUtV-I84EeupeID-dfoOaA"/>
+      <associationEnds xmi:id="_PUtV7o84EeupeID-dfoOaA" name="myData" lowerBound="1" navigable="false" assoc="_PUtV8484EeupeID-dfoOaA"/>
+      <associationEnds xmi:id="_PUtV7484EeupeID-dfoOaA" name="elements" upperBound="-1" referenceType="Aggregation" assoc="_PUtV9I84EeupeID-dfoOaA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_PUtV8I84EeupeID-dfoOaA" name="Associated" partiality="public">
+      <associationEnds xmi:id="_PUtV8Y84EeupeID-dfoOaA" name="myCollectionOfAssociated" lowerBound="1" navigable="false" assoc="_PUtV9I84EeupeID-dfoOaA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_PUtV8o84EeupeID-dfoOaA" name="Object" partiality="concern"/>
+    <associations xmi:id="_PUtV8484EeupeID-dfoOaA" name="Data_CollectionOfAssociated" ends="_PUtV6I84EeupeID-dfoOaA _PUtV7o84EeupeID-dfoOaA"/>
+    <associations xmi:id="_PUtV9I84EeupeID-dfoOaA" name="CollectionOfAssociated_Associated" ends="_PUtV7484EeupeID-dfoOaA _PUtV8Y84EeupeID-dfoOaA"/>
+    <types xsi:type="ram:RVoid" xmi:id="_PUtV9Y84EeupeID-dfoOaA"/>
+    <types xsi:type="ram:RAny" xmi:id="_PUtV9o84EeupeID-dfoOaA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_PUtV9484EeupeID-dfoOaA"/>
+    <types xsi:type="ram:RInt" xmi:id="_PUtV-I84EeupeID-dfoOaA"/>
+    <types xsi:type="ram:RChar" xmi:id="_PUtV-Y84EeupeID-dfoOaA"/>
+    <types xsi:type="ram:RString" xmi:id="_PUtV-o84EeupeID-dfoOaA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_PUtV-484EeupeID-dfoOaA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_PUtV_I84EeupeID-dfoOaA"/>
+    <types xsi:type="ram:RLong" xmi:id="_PUtV_Y84EeupeID-dfoOaA"/>
+    <types xsi:type="ram:RByte" xmi:id="_PUtV_o84EeupeID-dfoOaA"/>
+  </structuralView>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_PUtV_484EeupeID-dfoOaA" specifies="_PUtV5I84EeupeID-dfoOaA">
+    <specification xmi:id="_PUtWAI84EeupeID-dfoOaA">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_PUtWAY84EeupeID-dfoOaA" covered="_PUtWB484EeupeID-dfoOaA" message="_PUtWCY84EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_PUtWAo84EeupeID-dfoOaA" covered="_PUtWB484EeupeID-dfoOaA" message="_PUtWDY84EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_PUtWA484EeupeID-dfoOaA" covered="_PUtWCI84EeupeID-dfoOaA" message="_PUtWDY84EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_PUtWBI84EeupeID-dfoOaA" covered="_PUtWCI84EeupeID-dfoOaA" message="_PUtWEI84EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_PUtWBY84EeupeID-dfoOaA" covered="_PUtWB484EeupeID-dfoOaA" message="_PUtWEI84EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_PUtWBo84EeupeID-dfoOaA" covered="_PUtWB484EeupeID-dfoOaA" message="_PUtWC484EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_PUtWB484EeupeID-dfoOaA" represents="_PUtWEY84EeupeID-dfoOaA" coveredBy="_PUtWAY84EeupeID-dfoOaA _PUtWBo84EeupeID-dfoOaA _PUtWAo84EeupeID-dfoOaA _PUtWBY84EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_PUtWCI84EeupeID-dfoOaA" represents="_PUtV6I84EeupeID-dfoOaA" coveredBy="_PUtWA484EeupeID-dfoOaA _PUtWBI84EeupeID-dfoOaA"/>
+      <messages xmi:id="_PUtWCY84EeupeID-dfoOaA" sendEvent="_PUtWEo84EeupeID-dfoOaA" receiveEvent="_PUtWAY84EeupeID-dfoOaA" signature="_PUtV5I84EeupeID-dfoOaA">
+        <localProperties xsi:type="ram:Attribute" xmi:id="_PUtWCo84EeupeID-dfoOaA" name="contains" type="_PUtV9484EeupeID-dfoOaA"/>
+      </messages>
+      <messages xmi:id="_PUtWC484EeupeID-dfoOaA" sendEvent="_PUtWBo84EeupeID-dfoOaA" receiveEvent="_PUtWE484EeupeID-dfoOaA" signature="_PUtV5I84EeupeID-dfoOaA" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_PUtWDI84EeupeID-dfoOaA" value="_PUtWCo84EeupeID-dfoOaA"/>
+      </messages>
+      <messages xmi:id="_PUtWDY84EeupeID-dfoOaA" sendEvent="_PUtWAo84EeupeID-dfoOaA" receiveEvent="_PUtWA484EeupeID-dfoOaA" signature="_PUtV6484EeupeID-dfoOaA" assignTo="_PUtWCo84EeupeID-dfoOaA">
+        <arguments xmi:id="_PUtWDo84EeupeID-dfoOaA" parameter="_PUtV7I84EeupeID-dfoOaA">
+          <value xsi:type="ram:ParameterValue" xmi:id="_PUtWD484EeupeID-dfoOaA" parameter="_PUtV5Y84EeupeID-dfoOaA"/>
+        </arguments>
+      </messages>
+      <messages xmi:id="_PUtWEI84EeupeID-dfoOaA" sendEvent="_PUtWBI84EeupeID-dfoOaA" receiveEvent="_PUtWBY84EeupeID-dfoOaA" signature="_PUtV6484EeupeID-dfoOaA" messageSort="reply"/>
+      <properties xmi:id="_PUtWEY84EeupeID-dfoOaA" name="target" lowerBound="1" type="_PUtV4o84EeupeID-dfoOaA"/>
+      <formalGates xmi:id="_PUtWEo84EeupeID-dfoOaA" message="_PUtWCY84EeupeID-dfoOaA" name="in_contains"/>
+      <formalGates xmi:id="_PUtWE484EeupeID-dfoOaA" message="_PUtWC484EeupeID-dfoOaA" name="out_contains"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_PUtWFI84EeupeID-dfoOaA" specifies="_PUtV5o84EeupeID-dfoOaA">
+    <specification xmi:id="_PUtWFY84EeupeID-dfoOaA">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_PUtWFo84EeupeID-dfoOaA" covered="_PUtWHI84EeupeID-dfoOaA" message="_PUtWHo84EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_PUtWF484EeupeID-dfoOaA" covered="_PUtWHI84EeupeID-dfoOaA" message="_PUtWIo84EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_PUtWGI84EeupeID-dfoOaA" covered="_PUtWHY84EeupeID-dfoOaA" message="_PUtWIo84EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_PUtWGY84EeupeID-dfoOaA" covered="_PUtWHY84EeupeID-dfoOaA" message="_PUtWI484EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_PUtWGo84EeupeID-dfoOaA" covered="_PUtWHI84EeupeID-dfoOaA" message="_PUtWI484EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_PUtWG484EeupeID-dfoOaA" covered="_PUtWHI84EeupeID-dfoOaA" message="_PUtWII84EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_PUtWHI84EeupeID-dfoOaA" represents="_PUtWJI84EeupeID-dfoOaA" coveredBy="_PUtWFo84EeupeID-dfoOaA _PUtWG484EeupeID-dfoOaA _PUtWF484EeupeID-dfoOaA _PUtWGo84EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_PUtWHY84EeupeID-dfoOaA" represents="_PUtV6I84EeupeID-dfoOaA" coveredBy="_PUtWGI84EeupeID-dfoOaA _PUtWGY84EeupeID-dfoOaA"/>
+      <messages xmi:id="_PUtWHo84EeupeID-dfoOaA" sendEvent="_PUtWJY84EeupeID-dfoOaA" receiveEvent="_PUtWFo84EeupeID-dfoOaA" signature="_PUtV5o84EeupeID-dfoOaA">
+        <localProperties xsi:type="ram:Attribute" xmi:id="_PUtWH484EeupeID-dfoOaA" name="size" type="_PUtV-I84EeupeID-dfoOaA"/>
+      </messages>
+      <messages xmi:id="_PUtWII84EeupeID-dfoOaA" sendEvent="_PUtWG484EeupeID-dfoOaA" receiveEvent="_PUtWJo84EeupeID-dfoOaA" signature="_PUtV5o84EeupeID-dfoOaA" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_PUtWIY84EeupeID-dfoOaA" value="_PUtWH484EeupeID-dfoOaA"/>
+      </messages>
+      <messages xmi:id="_PUtWIo84EeupeID-dfoOaA" sendEvent="_PUtWF484EeupeID-dfoOaA" receiveEvent="_PUtWGI84EeupeID-dfoOaA" signature="_PUtV7Y84EeupeID-dfoOaA" assignTo="_PUtWH484EeupeID-dfoOaA"/>
+      <messages xmi:id="_PUtWI484EeupeID-dfoOaA" sendEvent="_PUtWGY84EeupeID-dfoOaA" receiveEvent="_PUtWGo84EeupeID-dfoOaA" signature="_PUtV7Y84EeupeID-dfoOaA" messageSort="reply"/>
+      <properties xmi:id="_PUtWJI84EeupeID-dfoOaA" name="target" lowerBound="1" type="_PUtV4o84EeupeID-dfoOaA"/>
+      <formalGates xmi:id="_PUtWJY84EeupeID-dfoOaA" message="_PUtWHo84EeupeID-dfoOaA" name="in_size"/>
+      <formalGates xmi:id="_PUtWJo84EeupeID-dfoOaA" message="_PUtWII84EeupeID-dfoOaA" name="out_size"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_PUtWJ484EeupeID-dfoOaA" specifies="_PUtV5484EeupeID-dfoOaA">
+    <specification xmi:id="_PUtWKI84EeupeID-dfoOaA">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_PUtWKY84EeupeID-dfoOaA" covered="_PUtWK484EeupeID-dfoOaA" message="_PUtWLI84EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_PUtWKo84EeupeID-dfoOaA" covered="_PUtWK484EeupeID-dfoOaA" message="_PUtWLY84EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_PUtWK484EeupeID-dfoOaA" represents="_PUtWL484EeupeID-dfoOaA" coveredBy="_PUtWKY84EeupeID-dfoOaA _PUtWKo84EeupeID-dfoOaA"/>
+      <messages xmi:id="_PUtWLI84EeupeID-dfoOaA" sendEvent="_PUtWMI84EeupeID-dfoOaA" receiveEvent="_PUtWKY84EeupeID-dfoOaA" signature="_PUtV5484EeupeID-dfoOaA"/>
+      <messages xmi:id="_PUtWLY84EeupeID-dfoOaA" sendEvent="_PUtWKo84EeupeID-dfoOaA" receiveEvent="_PUtWMY84EeupeID-dfoOaA" signature="_PUtV5484EeupeID-dfoOaA" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_PUtWLo84EeupeID-dfoOaA" value="_PUtV6I84EeupeID-dfoOaA"/>
+      </messages>
+      <properties xmi:id="_PUtWL484EeupeID-dfoOaA" name="target" lowerBound="1" type="_PUtV4o84EeupeID-dfoOaA"/>
+      <formalGates xmi:id="_PUtWMI84EeupeID-dfoOaA" message="_PUtWLI84EeupeID-dfoOaA" name="in_getAssociated"/>
+      <formalGates xmi:id="_PUtWMY84EeupeID-dfoOaA" message="_PUtWLY84EeupeID-dfoOaA" name="out_getAssociated"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_PUtWMo84EeupeID-dfoOaA" specifies="_PUtV4484EeupeID-dfoOaA">
+    <specification xmi:id="_PUtWM484EeupeID-dfoOaA">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_PUtWNI84EeupeID-dfoOaA" covered="_PUtWOI84EeupeID-dfoOaA" message="_PUtWOo84EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_PUtWNY84EeupeID-dfoOaA" covered="_PUtWOI84EeupeID-dfoOaA" message="_PUtWPY84EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_PUtWNo84EeupeID-dfoOaA" covered="_PUtWOY84EeupeID-dfoOaA" message="_PUtWPY84EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_PUtWN484EeupeID-dfoOaA" covered="_PUtWOI84EeupeID-dfoOaA" message="_PUtWPI84EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_PUtWOI84EeupeID-dfoOaA" represents="_PUtWPo84EeupeID-dfoOaA" coveredBy="_PUtWNI84EeupeID-dfoOaA _PUtWN484EeupeID-dfoOaA _PUtWNY84EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_PUtWOY84EeupeID-dfoOaA" represents="_PUtWO484EeupeID-dfoOaA" coveredBy="_PUtWNo84EeupeID-dfoOaA"/>
+      <messages xmi:id="_PUtWOo84EeupeID-dfoOaA" sendEvent="_PUtWP484EeupeID-dfoOaA" receiveEvent="_PUtWNI84EeupeID-dfoOaA" signature="_PUtV4484EeupeID-dfoOaA" messageSort="createMessage">
+        <localProperties xsi:type="ram:Reference" xmi:id="_PUtWO484EeupeID-dfoOaA" name="collection" lowerBound="1" type="_PUtV6Y84EeupeID-dfoOaA"/>
+      </messages>
+      <messages xmi:id="_PUtWPI84EeupeID-dfoOaA" sendEvent="_PUtWN484EeupeID-dfoOaA" receiveEvent="_PUtWQI84EeupeID-dfoOaA" signature="_PUtV4484EeupeID-dfoOaA" messageSort="reply"/>
+      <messages xmi:id="_PUtWPY84EeupeID-dfoOaA" sendEvent="_PUtWNY84EeupeID-dfoOaA" receiveEvent="_PUtWNo84EeupeID-dfoOaA" signature="_PUtV6o84EeupeID-dfoOaA" assignTo="_PUtWO484EeupeID-dfoOaA" messageSort="createMessage"/>
+      <properties xmi:id="_PUtWPo84EeupeID-dfoOaA" name="target" lowerBound="1" type="_PUtV4o84EeupeID-dfoOaA"/>
+      <formalGates xmi:id="_PUtWP484EeupeID-dfoOaA" message="_PUtWOo84EeupeID-dfoOaA" name="in_create"/>
+      <formalGates xmi:id="_PUtWQI84EeupeID-dfoOaA" message="_PUtWPI84EeupeID-dfoOaA" name="out_create"/>
+    </specification>
+  </messageViews>
+  <layout xmi:id="_PUtWQY84EeupeID-dfoOaA">
+    <containers xmi:id="_PUtWQo84EeupeID-dfoOaA" key="_PUtV4Y84EeupeID-dfoOaA"/>
+  </layout>
+  <wovenAspects xmi:id="_PUtWQ484EeupeID-dfoOaA" name="Association">
+    <comesFrom href="Association.ram#_mDv4YEQ1EeSSfO86-u_zzA"/>
+    <wovenElements xmi:id="_PUtWRI84EeupeID-dfoOaA" key="_PUtV4o84EeupeID-dfoOaA">
+      <value xsi:type="ram:Class" href="Association.ram#_stleMHdvEeGm3uH8rYfPgw"/>
+    </wovenElements>
+    <wovenElements xmi:id="_PUtWRY84EeupeID-dfoOaA" key="_PUtV8I84EeupeID-dfoOaA">
+      <value xsi:type="ram:Class" href="Association.ram#_R4j4oIdeEeG0oPAT5BSQFQ"/>
+    </wovenElements>
+  </wovenAspects>
+  <wovenAspects xmi:id="_PUtWRo84EeupeID-dfoOaA" name="Many">
+    <comesFrom href="Many.ram#_4opdQH2BEeWIy5MXlHNV-w"/>
+    <wovenElements xmi:id="_PUtWR484EeupeID-dfoOaA" key="_PUtV4484EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="Many.ram#_nurMgOq7EeWy6cPK1HfUhA"/>
+    </wovenElements>
+    <wovenElements xmi:id="_PUtWSI84EeupeID-dfoOaA" key="_PUtV5o84EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="Many.ram#_YXIBMH2CEeWIy5MXlHNV-w"/>
+    </wovenElements>
+    <wovenElements xmi:id="_PUtWSY84EeupeID-dfoOaA" key="_PUtV5484EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="Many.ram#_ZgQMcH2CEeWIy5MXlHNV-w"/>
+    </wovenElements>
+    <wovenElements xmi:id="_PUtWSo84EeupeID-dfoOaA" key="_PUtV7Y84EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="Many.ram#_lA1TsH2CEeWIy5MXlHNV-w"/>
+    </wovenElements>
+    <wovenElements xmi:id="_PUtWS484EeupeID-dfoOaA" key="_PUtV6Y84EeupeID-dfoOaA">
+      <value xsi:type="ram:Class" href="Many.ram#_4opdRH2BEeWIy5MXlHNV-w"/>
+    </wovenElements>
+    <wovenElements xmi:id="_PUtWTI84EeupeID-dfoOaA" key="_PUtV6o84EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="Many.ram#_kCfOoOq7EeWy6cPK1HfUhA"/>
+    </wovenElements>
+    <wovenElements xmi:id="_PUtWTY84EeupeID-dfoOaA" key="_PUtV5I84EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="Many.ram#_LDkgcH2CEeWIy5MXlHNV-w"/>
+    </wovenElements>
+    <wovenElements xmi:id="_PUtWTo84EeupeID-dfoOaA" key="_PUtV6484EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="Many.ram#_h0EcwH2CEeWIy5MXlHNV-w"/>
+    </wovenElements>
+    <wovenElements xmi:id="_PUtWT484EeupeID-dfoOaA" key="_PUtV4o84EeupeID-dfoOaA">
+      <value xsi:type="ram:Class" href="Many.ram#_4opdQ32BEeWIy5MXlHNV-w"/>
+    </wovenElements>
+    <wovenElements xmi:id="_PUtWUI84EeupeID-dfoOaA" key="_PUtV8I84EeupeID-dfoOaA">
+      <value xsi:type="ram:Class" href="Many.ram#_4opdQn2BEeWIy5MXlHNV-w"/>
+    </wovenElements>
+    <wovenElements xmi:id="_PUtWUY84EeupeID-dfoOaA" key="_PUtV8o84EeupeID-dfoOaA">
+      <value xsi:type="ram:Class" href="Many.ram#_cPYFIH2CEeWIy5MXlHNV-w"/>
+    </wovenElements>
+  </wovenAspects>
+</ram:Aspect>

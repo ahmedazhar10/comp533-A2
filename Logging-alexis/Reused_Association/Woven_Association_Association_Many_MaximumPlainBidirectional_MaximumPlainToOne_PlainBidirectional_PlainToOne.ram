@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_k4hZcI80EeupeID-dfoOaA" name="Association&lt;Association,PlainToOne,PlainBidirectional,Many,MaximumPlainBidirectional,MaximumPlainToOne>">
+  <structuralView xmi:id="_k4hZcY80EeupeID-dfoOaA">
+    <classes xsi:type="ram:Class" xmi:id="_k4hZco80EeupeID-dfoOaA" name="Associated" partiality="public">
+      <operations xmi:id="_k4hZc480EeupeID-dfoOaA" name="setSimple" extendedVisibility="protected" returnType="_k4hZmI80EeupeID-dfoOaA">
+        <parameters xmi:id="_k4hZdI80EeupeID-dfoOaA" name="a" type="_k4hZeY80EeupeID-dfoOaA"/>
+      </operations>
+      <operations xmi:id="_k4hZdY80EeupeID-dfoOaA" name="get" extendedVisibility="package" returnType="_k4hZeY80EeupeID-dfoOaA"/>
+      <operations xmi:id="_k4hZdo80EeupeID-dfoOaA" name="set" extendedVisibility="package" returnType="_k4hZmI80EeupeID-dfoOaA">
+        <parameters xmi:id="_k4hZd480EeupeID-dfoOaA" name="a" type="_k4hZeY80EeupeID-dfoOaA"/>
+      </operations>
+      <associationEnds xmi:id="_k4hZeI80EeupeID-dfoOaA" name="myCollectionOfAssociated" lowerBound="1" navigable="false" assoc="_k4hZlY80EeupeID-dfoOaA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_k4hZeY80EeupeID-dfoOaA" name="Data" partiality="public" visibility="public">
+      <operations xmi:id="_k4hZeo80EeupeID-dfoOaA" name="add" visibility="public" returnType="_k4hZmI80EeupeID-dfoOaA">
+        <parameters xmi:id="_k4hZe480EeupeID-dfoOaA" name="a" type="_k4hZco80EeupeID-dfoOaA"/>
+      </operations>
+      <operations xmi:id="_k4hZfI80EeupeID-dfoOaA" name="remove" visibility="public" returnType="_k4hZmI80EeupeID-dfoOaA">
+        <parameters xmi:id="_k4hZfY80EeupeID-dfoOaA" name="a" type="_k4hZco80EeupeID-dfoOaA"/>
+      </operations>
+      <operations xmi:id="_k4hZfo80EeupeID-dfoOaA" name="addSimple" extendedVisibility="protected" returnType="_k4hZmI80EeupeID-dfoOaA">
+        <parameters xmi:id="_k4hZf480EeupeID-dfoOaA" name="a" type="_k4hZco80EeupeID-dfoOaA"/>
+      </operations>
+      <operations xmi:id="_k4hZgI80EeupeID-dfoOaA" name="removeSimple" extendedVisibility="protected" returnType="_k4hZmI80EeupeID-dfoOaA">
+        <parameters xmi:id="_k4hZgY80EeupeID-dfoOaA" name="a" type="_k4hZco80EeupeID-dfoOaA"/>
+      </operations>
+      <operations xmi:id="_k4hZgo80EeupeID-dfoOaA" name="create" partiality="public" visibility="public" returnType="_k4hZeY80EeupeID-dfoOaA" operationType="Constructor"/>
+      <operations xmi:id="_k4hZg480EeupeID-dfoOaA" name="contains" visibility="public" returnType="_k4hZmI80EeupeID-dfoOaA">
+        <parameters xmi:id="_k4hZhI80EeupeID-dfoOaA" name="a" type="_k4hZco80EeupeID-dfoOaA"/>
+      </operations>
+      <operations xmi:id="_k4hZhY80EeupeID-dfoOaA" name="size" visibility="public" returnType="_k4hZmY80EeupeID-dfoOaA"/>
+      <operations xmi:id="_k4hZho80EeupeID-dfoOaA" name="getAssociated" visibility="public" returnType="_k4hZiI80EeupeID-dfoOaA"/>
+      <associationEnds xmi:id="_k4hZh480EeupeID-dfoOaA" name="collection" lowerBound="1" referenceType="Composition" assoc="_k4hZlI80EeupeID-dfoOaA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_k4hZiI80EeupeID-dfoOaA" name="CollectionOfAssociated" partiality="concern">
+      <operations xmi:id="_k4hZiY80EeupeID-dfoOaA" name="add" partiality="concern" extendedVisibility="package" returnType="_k4hZmI80EeupeID-dfoOaA">
+        <parameters xmi:id="_k4hZio80EeupeID-dfoOaA" name="a" type="_k4hZco80EeupeID-dfoOaA"/>
+      </operations>
+      <operations xmi:id="_k4hZi480EeupeID-dfoOaA" name="remove" partiality="concern" extendedVisibility="package" returnType="_k4hZmI80EeupeID-dfoOaA">
+        <parameters xmi:id="_k4hZjI80EeupeID-dfoOaA" name="a" type="_k4hZk480EeupeID-dfoOaA"/>
+      </operations>
+      <operations xmi:id="_k4hZjY80EeupeID-dfoOaA" name="create" partiality="concern" extendedVisibility="package" returnType="_k4hZiI80EeupeID-dfoOaA" operationType="Constructor"/>
+      <operations xmi:id="_k4hZjo80EeupeID-dfoOaA" name="contains" partiality="concern" extendedVisibility="package" returnType="_k4hZmI80EeupeID-dfoOaA">
+        <parameters xmi:id="_k4hZj480EeupeID-dfoOaA" name="o" type="_k4hZk480EeupeID-dfoOaA"/>
+      </operations>
+      <operations xmi:id="_k4hZkI80EeupeID-dfoOaA" name="size" partiality="concern" extendedVisibility="package" returnType="_k4hZmY80EeupeID-dfoOaA"/>
+      <associationEnds xmi:id="_k4hZkY80EeupeID-dfoOaA" name="myData" lowerBound="1" navigable="false" assoc="_k4hZlI80EeupeID-dfoOaA"/>
+      <associationEnds xmi:id="_k4hZko80EeupeID-dfoOaA" name="elements" upperBound="-1" referenceType="Aggregation" assoc="_k4hZlY80EeupeID-dfoOaA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_k4hZk480EeupeID-dfoOaA" name="Object" partiality="concern"/>
+    <associations xmi:id="_k4hZlI80EeupeID-dfoOaA" name="Data_CollectionOfAssociated" ends="_k4hZh480EeupeID-dfoOaA _k4hZkY80EeupeID-dfoOaA"/>
+    <associations xmi:id="_k4hZlY80EeupeID-dfoOaA" name="CollectionOfAssociated_Associated" ends="_k4hZko80EeupeID-dfoOaA _k4hZeI80EeupeID-dfoOaA"/>
+    <types xsi:type="ram:RVoid" xmi:id="_k4hZlo80EeupeID-dfoOaA"/>
+    <types xsi:type="ram:RAny" xmi:id="_k4hZl480EeupeID-dfoOaA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_k4hZmI80EeupeID-dfoOaA"/>
+    <types xsi:type="ram:RInt" xmi:id="_k4hZmY80EeupeID-dfoOaA"/>
+    <types xsi:type="ram:RChar" xmi:id="_k4hZmo80EeupeID-dfoOaA"/>
+    <types xsi:type="ram:RString" xmi:id="_k4hZm480EeupeID-dfoOaA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_k4hZnI80EeupeID-dfoOaA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_k4hZnY80EeupeID-dfoOaA"/>
+    <types xsi:type="ram:RLong" xmi:id="_k4hZno80EeupeID-dfoOaA"/>
+    <types xsi:type="ram:RByte" xmi:id="_k4hZn480EeupeID-dfoOaA"/>
+  </structuralView>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_k4hZoI80EeupeID-dfoOaA" specifies="_k4hZfo80EeupeID-dfoOaA">
+    <specification xmi:id="_k4hZoY80EeupeID-dfoOaA">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZoo80EeupeID-dfoOaA" covered="_k4hZtI80EeupeID-dfoOaA" message="_k4hZt480EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZo480EeupeID-dfoOaA" covered="_k4hZtI80EeupeID-dfoOaA" message="_k4hZwo80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZpI80EeupeID-dfoOaA" covered="_k4hZto80EeupeID-dfoOaA" message="_k4hZwo80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZpY80EeupeID-dfoOaA" covered="_k4hZto80EeupeID-dfoOaA" message="_k4hZw480EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZpo80EeupeID-dfoOaA" covered="_k4hZtI80EeupeID-dfoOaA" message="_k4hZw480EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_k4hZp480EeupeID-dfoOaA" covered="_k4hZtI80EeupeID-dfoOaA" interactionOperator="opt">
+        <operands xmi:id="_k4hZqI80EeupeID-dfoOaA">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZqY80EeupeID-dfoOaA" covered="_k4hZtI80EeupeID-dfoOaA" message="_k4hZxI80EeupeID-dfoOaA"/>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_k4hZqo80EeupeID-dfoOaA" body="size == maximum" language="java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_k4hZq480EeupeID-dfoOaA" covered="_k4hZtI80EeupeID-dfoOaA" interactionOperator="opt">
+        <operands xmi:id="_k4hZrI80EeupeID-dfoOaA">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZrY80EeupeID-dfoOaA" covered="_k4hZtI80EeupeID-dfoOaA" message="_k4hZvI80EeupeID-dfoOaA"/>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_k4hZro80EeupeID-dfoOaA" body="a == null" language="java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZr480EeupeID-dfoOaA" covered="_k4hZtI80EeupeID-dfoOaA" message="_k4hZvo80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZsI80EeupeID-dfoOaA" covered="_k4hZtY80EeupeID-dfoOaA" message="_k4hZvo80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZsY80EeupeID-dfoOaA" covered="_k4hZtY80EeupeID-dfoOaA" message="_k4hZwY80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZso80EeupeID-dfoOaA" covered="_k4hZtI80EeupeID-dfoOaA" message="_k4hZwY80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZs480EeupeID-dfoOaA" covered="_k4hZtI80EeupeID-dfoOaA" message="_k4hZuo80EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_k4hZtI80EeupeID-dfoOaA" represents="_k4hZxo80EeupeID-dfoOaA" coveredBy="_k4hZoo80EeupeID-dfoOaA _k4hZs480EeupeID-dfoOaA _k4hZq480EeupeID-dfoOaA _k4hZrY80EeupeID-dfoOaA _k4hZr480EeupeID-dfoOaA _k4hZso80EeupeID-dfoOaA _k4hZo480EeupeID-dfoOaA _k4hZpo80EeupeID-dfoOaA _k4hZp480EeupeID-dfoOaA _k4hZqY80EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_k4hZtY80EeupeID-dfoOaA" represents="_k4hZh480EeupeID-dfoOaA" coveredBy="_k4hZsI80EeupeID-dfoOaA _k4hZsY80EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_k4hZto80EeupeID-dfoOaA" represents="_k4hZh480EeupeID-dfoOaA" coveredBy="_k4hZpI80EeupeID-dfoOaA _k4hZpY80EeupeID-dfoOaA"/>
+      <messages xmi:id="_k4hZt480EeupeID-dfoOaA" sendEvent="_k4hZx480EeupeID-dfoOaA" receiveEvent="_k4hZoo80EeupeID-dfoOaA" signature="_k4hZfo80EeupeID-dfoOaA">
+        <localProperties xsi:type="ram:Attribute" xmi:id="_k4hZuI80EeupeID-dfoOaA" name="wasAdded" type="_k4hZmI80EeupeID-dfoOaA"/>
+        <localProperties xsi:type="ram:Attribute" xmi:id="_k4hZuY80EeupeID-dfoOaA" name="size" type="_k4hZmY80EeupeID-dfoOaA"/>
+      </messages>
+      <messages xmi:id="_k4hZuo80EeupeID-dfoOaA" sendEvent="_k4hZs480EeupeID-dfoOaA" receiveEvent="_k4hZyI80EeupeID-dfoOaA" signature="_k4hZfo80EeupeID-dfoOaA" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_k4hZu480EeupeID-dfoOaA" value="_k4hZuI80EeupeID-dfoOaA"/>
+      </messages>
+      <messages xmi:id="_k4hZvI80EeupeID-dfoOaA" sendEvent="_k4hZrY80EeupeID-dfoOaA" receiveEvent="_k4hZyY80EeupeID-dfoOaA" signature="_k4hZfo80EeupeID-dfoOaA" messageSort="reply">
+        <returns xsi:type="ram:LiteralBoolean" xmi:id="_k4hZvY80EeupeID-dfoOaA"/>
+      </messages>
+      <messages xmi:id="_k4hZvo80EeupeID-dfoOaA" sendEvent="_k4hZr480EeupeID-dfoOaA" receiveEvent="_k4hZsI80EeupeID-dfoOaA" signature="_k4hZiY80EeupeID-dfoOaA" assignTo="_k4hZuI80EeupeID-dfoOaA">
+        <arguments xmi:id="_k4hZv480EeupeID-dfoOaA" parameter="_k4hZio80EeupeID-dfoOaA">
+          <value xsi:type="ram:StructuralFeatureValue" xmi:id="_k4hZwI80EeupeID-dfoOaA" value="_k4hZxo80EeupeID-dfoOaA"/>
+        </arguments>
+      </messages>
+      <messages xmi:id="_k4hZwY80EeupeID-dfoOaA" sendEvent="_k4hZsY80EeupeID-dfoOaA" receiveEvent="_k4hZso80EeupeID-dfoOaA" signature="_k4hZiY80EeupeID-dfoOaA" messageSort="reply"/>
+      <messages xmi:id="_k4hZwo80EeupeID-dfoOaA" sendEvent="_k4hZo480EeupeID-dfoOaA" receiveEvent="_k4hZpI80EeupeID-dfoOaA" signature="_k4hZkI80EeupeID-dfoOaA" assignTo="_k4hZuY80EeupeID-dfoOaA"/>
+      <messages xmi:id="_k4hZw480EeupeID-dfoOaA" sendEvent="_k4hZpY80EeupeID-dfoOaA" receiveEvent="_k4hZpo80EeupeID-dfoOaA" signature="_k4hZkI80EeupeID-dfoOaA" messageSort="reply"/>
+      <messages xmi:id="_k4hZxI80EeupeID-dfoOaA" sendEvent="_k4hZqY80EeupeID-dfoOaA" receiveEvent="_k4hZyo80EeupeID-dfoOaA" signature="_k4hZeo80EeupeID-dfoOaA" messageSort="reply">
+        <returns xsi:type="ram:LiteralBoolean" xmi:id="_k4hZxY80EeupeID-dfoOaA"/>
+      </messages>
+      <properties xmi:id="_k4hZxo80EeupeID-dfoOaA" name="target" lowerBound="1" type="_k4hZeY80EeupeID-dfoOaA"/>
+      <formalGates xmi:id="_k4hZx480EeupeID-dfoOaA" message="_k4hZt480EeupeID-dfoOaA" name="in_addSimple"/>
+      <formalGates xmi:id="_k4hZyI80EeupeID-dfoOaA" message="_k4hZuo80EeupeID-dfoOaA" name="out_addSimple"/>
+      <formalGates xmi:id="_k4hZyY80EeupeID-dfoOaA" message="_k4hZvI80EeupeID-dfoOaA" name="out_addSimple"/>
+      <formalGates xmi:id="_k4hZyo80EeupeID-dfoOaA" message="_k4hZxI80EeupeID-dfoOaA" name="out_add"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_k4hZy480EeupeID-dfoOaA" specifies="_k4hZgI80EeupeID-dfoOaA">
+    <specification xmi:id="_k4hZzI80EeupeID-dfoOaA">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZzY80EeupeID-dfoOaA" covered="_k4hZ1480EeupeID-dfoOaA" message="_k4hZ2Y80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_k4hZzo80EeupeID-dfoOaA" covered="_k4hZ1480EeupeID-dfoOaA" interactionOperator="opt">
+        <operands xmi:id="_k4hZz480EeupeID-dfoOaA">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZ0I80EeupeID-dfoOaA" covered="_k4hZ1480EeupeID-dfoOaA" message="_k4hZ3Y80EeupeID-dfoOaA"/>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_k4hZ0Y80EeupeID-dfoOaA" body="a == null" language="java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZ0o80EeupeID-dfoOaA" covered="_k4hZ1480EeupeID-dfoOaA" message="_k4hZ3480EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZ0480EeupeID-dfoOaA" covered="_k4hZ2I80EeupeID-dfoOaA" message="_k4hZ3480EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZ1I80EeupeID-dfoOaA" covered="_k4hZ2I80EeupeID-dfoOaA" message="_k4hZ4o80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZ1Y80EeupeID-dfoOaA" covered="_k4hZ1480EeupeID-dfoOaA" message="_k4hZ4o80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZ1o80EeupeID-dfoOaA" covered="_k4hZ1480EeupeID-dfoOaA" message="_k4hZ2480EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_k4hZ1480EeupeID-dfoOaA" represents="_k4hZ4480EeupeID-dfoOaA" coveredBy="_k4hZzY80EeupeID-dfoOaA _k4hZ1o80EeupeID-dfoOaA _k4hZzo80EeupeID-dfoOaA _k4hZ0I80EeupeID-dfoOaA _k4hZ0o80EeupeID-dfoOaA _k4hZ1Y80EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_k4hZ2I80EeupeID-dfoOaA" represents="_k4hZh480EeupeID-dfoOaA" coveredBy="_k4hZ0480EeupeID-dfoOaA _k4hZ1I80EeupeID-dfoOaA"/>
+      <messages xmi:id="_k4hZ2Y80EeupeID-dfoOaA" sendEvent="_k4hZ5I80EeupeID-dfoOaA" receiveEvent="_k4hZzY80EeupeID-dfoOaA" signature="_k4hZgI80EeupeID-dfoOaA">
+        <localProperties xsi:type="ram:Attribute" xmi:id="_k4hZ2o80EeupeID-dfoOaA" name="wasRemoved" type="_k4hZmI80EeupeID-dfoOaA"/>
+      </messages>
+      <messages xmi:id="_k4hZ2480EeupeID-dfoOaA" sendEvent="_k4hZ1o80EeupeID-dfoOaA" receiveEvent="_k4hZ5Y80EeupeID-dfoOaA" signature="_k4hZgI80EeupeID-dfoOaA" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_k4hZ3I80EeupeID-dfoOaA" value="_k4hZ2o80EeupeID-dfoOaA"/>
+      </messages>
+      <messages xmi:id="_k4hZ3Y80EeupeID-dfoOaA" sendEvent="_k4hZ0I80EeupeID-dfoOaA" receiveEvent="_k4hZ5o80EeupeID-dfoOaA" signature="_k4hZgI80EeupeID-dfoOaA" messageSort="reply">
+        <returns xsi:type="ram:LiteralBoolean" xmi:id="_k4hZ3o80EeupeID-dfoOaA"/>
+      </messages>
+      <messages xmi:id="_k4hZ3480EeupeID-dfoOaA" sendEvent="_k4hZ0o80EeupeID-dfoOaA" receiveEvent="_k4hZ0480EeupeID-dfoOaA" signature="_k4hZi480EeupeID-dfoOaA" assignTo="_k4hZ2o80EeupeID-dfoOaA">
+        <arguments xmi:id="_k4hZ4I80EeupeID-dfoOaA" parameter="_k4hZjI80EeupeID-dfoOaA">
+          <value xsi:type="ram:ParameterValue" xmi:id="_k4hZ4Y80EeupeID-dfoOaA" parameter="_k4hZgY80EeupeID-dfoOaA"/>
+        </arguments>
+      </messages>
+      <messages xmi:id="_k4hZ4o80EeupeID-dfoOaA" sendEvent="_k4hZ1I80EeupeID-dfoOaA" receiveEvent="_k4hZ1Y80EeupeID-dfoOaA" signature="_k4hZi480EeupeID-dfoOaA" messageSort="reply"/>
+      <properties xmi:id="_k4hZ4480EeupeID-dfoOaA" name="target" lowerBound="1" type="_k4hZeY80EeupeID-dfoOaA"/>
+      <formalGates xmi:id="_k4hZ5I80EeupeID-dfoOaA" message="_k4hZ2Y80EeupeID-dfoOaA" name="in_removeSimple"/>
+      <formalGates xmi:id="_k4hZ5Y80EeupeID-dfoOaA" message="_k4hZ2480EeupeID-dfoOaA" name="out_removeSimple"/>
+      <formalGates xmi:id="_k4hZ5o80EeupeID-dfoOaA" message="_k4hZ3Y80EeupeID-dfoOaA" name="out_removeSimple"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_k4hZ5480EeupeID-dfoOaA" specifies="_k4hZeo80EeupeID-dfoOaA">
+    <specification xmi:id="_k4hZ6I80EeupeID-dfoOaA">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZ6Y80EeupeID-dfoOaA" covered="_k4haAY80EeupeID-dfoOaA" message="_k4haBY80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZ6o80EeupeID-dfoOaA" covered="_k4haAY80EeupeID-dfoOaA" message="_k4haFo80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZ6480EeupeID-dfoOaA" covered="_k4haBI80EeupeID-dfoOaA" message="_k4haFo80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZ7I80EeupeID-dfoOaA" covered="_k4haBI80EeupeID-dfoOaA" message="_k4haF480EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZ7Y80EeupeID-dfoOaA" covered="_k4haAY80EeupeID-dfoOaA" message="_k4haF480EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_k4hZ7o80EeupeID-dfoOaA" covered="_k4haAY80EeupeID-dfoOaA" interactionOperator="opt">
+        <operands xmi:id="_k4hZ7480EeupeID-dfoOaA">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZ8I80EeupeID-dfoOaA" covered="_k4haAY80EeupeID-dfoOaA" message="_k4haGI80EeupeID-dfoOaA"/>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_k4hZ8Y80EeupeID-dfoOaA" body="size == maximum" language="java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_k4hZ8o80EeupeID-dfoOaA" covered="_k4haAY80EeupeID-dfoOaA" interactionOperator="opt">
+        <operands xmi:id="_k4hZ8480EeupeID-dfoOaA">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZ9I80EeupeID-dfoOaA" covered="_k4haAY80EeupeID-dfoOaA" message="_k4haDo80EeupeID-dfoOaA"/>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_k4hZ9Y80EeupeID-dfoOaA" body="a == null" language="java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZ9o80EeupeID-dfoOaA" covered="_k4haAY80EeupeID-dfoOaA" message="_k4haEI80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZ9480EeupeID-dfoOaA" covered="_k4haA480EeupeID-dfoOaA" message="_k4haEI80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZ-I80EeupeID-dfoOaA" covered="_k4haA480EeupeID-dfoOaA" message="_k4haE480EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZ-Y80EeupeID-dfoOaA" covered="_k4haAY80EeupeID-dfoOaA" message="_k4haE480EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_k4hZ-o80EeupeID-dfoOaA" covered="_k4haAY80EeupeID-dfoOaA" interactionOperator="opt">
+        <operands xmi:id="_k4hZ-480EeupeID-dfoOaA">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZ_I80EeupeID-dfoOaA" covered="_k4haAY80EeupeID-dfoOaA" message="_k4haFI80EeupeID-dfoOaA"/>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_k4hZ_Y80EeupeID-dfoOaA" body="!wasSet" language="java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZ_o80EeupeID-dfoOaA" covered="_k4haAY80EeupeID-dfoOaA" message="_k4haC480EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hZ_480EeupeID-dfoOaA" covered="_k4haAo80EeupeID-dfoOaA" message="_k4haC480EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haAI80EeupeID-dfoOaA" covered="_k4haAY80EeupeID-dfoOaA" message="_k4haCY80EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_k4haAY80EeupeID-dfoOaA" represents="_k4haGo80EeupeID-dfoOaA" coveredBy="_k4hZ6Y80EeupeID-dfoOaA _k4haAI80EeupeID-dfoOaA _k4hZ_o80EeupeID-dfoOaA _k4hZ8o80EeupeID-dfoOaA _k4hZ9I80EeupeID-dfoOaA _k4hZ9o80EeupeID-dfoOaA _k4hZ-Y80EeupeID-dfoOaA _k4hZ-o80EeupeID-dfoOaA _k4hZ_I80EeupeID-dfoOaA _k4hZ6o80EeupeID-dfoOaA _k4hZ7Y80EeupeID-dfoOaA _k4hZ7o80EeupeID-dfoOaA _k4hZ8I80EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_k4haAo80EeupeID-dfoOaA" represents="_k4hZh480EeupeID-dfoOaA" coveredBy="_k4hZ_480EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_k4haA480EeupeID-dfoOaA" represents="_k4hZe480EeupeID-dfoOaA" coveredBy="_k4hZ9480EeupeID-dfoOaA _k4hZ-I80EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_k4haBI80EeupeID-dfoOaA" represents="_k4hZh480EeupeID-dfoOaA" coveredBy="_k4hZ6480EeupeID-dfoOaA _k4hZ7I80EeupeID-dfoOaA"/>
+      <messages xmi:id="_k4haBY80EeupeID-dfoOaA" sendEvent="_k4haG480EeupeID-dfoOaA" receiveEvent="_k4hZ6Y80EeupeID-dfoOaA" signature="_k4hZeo80EeupeID-dfoOaA">
+        <localProperties xsi:type="ram:Attribute" xmi:id="_k4haBo80EeupeID-dfoOaA" name="added" type="_k4hZmI80EeupeID-dfoOaA"/>
+        <localProperties xsi:type="ram:Attribute" xmi:id="_k4haB480EeupeID-dfoOaA" name="wasSet" type="_k4hZmI80EeupeID-dfoOaA"/>
+        <localProperties xsi:type="ram:Attribute" xmi:id="_k4haCI80EeupeID-dfoOaA" name="size" type="_k4hZmY80EeupeID-dfoOaA"/>
+      </messages>
+      <messages xmi:id="_k4haCY80EeupeID-dfoOaA" sendEvent="_k4haAI80EeupeID-dfoOaA" receiveEvent="_k4haHI80EeupeID-dfoOaA" signature="_k4hZeo80EeupeID-dfoOaA" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_k4haCo80EeupeID-dfoOaA" value="_k4haBo80EeupeID-dfoOaA"/>
+      </messages>
+      <messages xmi:id="_k4haC480EeupeID-dfoOaA" sendEvent="_k4hZ_o80EeupeID-dfoOaA" receiveEvent="_k4hZ_480EeupeID-dfoOaA" signature="_k4hZiY80EeupeID-dfoOaA" assignTo="_k4haBo80EeupeID-dfoOaA">
+        <arguments xmi:id="_k4haDI80EeupeID-dfoOaA" parameter="_k4hZio80EeupeID-dfoOaA">
+          <value xsi:type="ram:ParameterValue" xmi:id="_k4haDY80EeupeID-dfoOaA" parameter="_k4hZe480EeupeID-dfoOaA"/>
+        </arguments>
+      </messages>
+      <messages xmi:id="_k4haDo80EeupeID-dfoOaA" sendEvent="_k4hZ9I80EeupeID-dfoOaA" receiveEvent="_k4haHY80EeupeID-dfoOaA" signature="_k4hZeo80EeupeID-dfoOaA" messageSort="reply">
+        <returns xsi:type="ram:LiteralBoolean" xmi:id="_k4haD480EeupeID-dfoOaA"/>
+      </messages>
+      <messages xmi:id="_k4haEI80EeupeID-dfoOaA" sendEvent="_k4hZ9o80EeupeID-dfoOaA" receiveEvent="_k4hZ9480EeupeID-dfoOaA" signature="_k4hZc480EeupeID-dfoOaA" assignTo="_k4haB480EeupeID-dfoOaA">
+        <arguments xmi:id="_k4haEY80EeupeID-dfoOaA" parameter="_k4hZdI80EeupeID-dfoOaA">
+          <value xsi:type="ram:StructuralFeatureValue" xmi:id="_k4haEo80EeupeID-dfoOaA" value="_k4haGo80EeupeID-dfoOaA"/>
+        </arguments>
+      </messages>
+      <messages xmi:id="_k4haE480EeupeID-dfoOaA" sendEvent="_k4hZ-I80EeupeID-dfoOaA" receiveEvent="_k4hZ-Y80EeupeID-dfoOaA" messageSort="reply"/>
+      <messages xmi:id="_k4haFI80EeupeID-dfoOaA" sendEvent="_k4hZ_I80EeupeID-dfoOaA" receiveEvent="_k4haHo80EeupeID-dfoOaA" signature="_k4hZeo80EeupeID-dfoOaA" messageSort="reply">
+        <returns xsi:type="ram:LiteralBoolean" xmi:id="_k4haFY80EeupeID-dfoOaA"/>
+      </messages>
+      <messages xmi:id="_k4haFo80EeupeID-dfoOaA" sendEvent="_k4hZ6o80EeupeID-dfoOaA" receiveEvent="_k4hZ6480EeupeID-dfoOaA" signature="_k4hZkI80EeupeID-dfoOaA" assignTo="_k4haCI80EeupeID-dfoOaA"/>
+      <messages xmi:id="_k4haF480EeupeID-dfoOaA" sendEvent="_k4hZ7I80EeupeID-dfoOaA" receiveEvent="_k4hZ7Y80EeupeID-dfoOaA" signature="_k4hZkI80EeupeID-dfoOaA" messageSort="reply"/>
+      <messages xmi:id="_k4haGI80EeupeID-dfoOaA" sendEvent="_k4hZ8I80EeupeID-dfoOaA" receiveEvent="_k4haH480EeupeID-dfoOaA" signature="_k4hZeo80EeupeID-dfoOaA" messageSort="reply">
+        <returns xsi:type="ram:LiteralBoolean" xmi:id="_k4haGY80EeupeID-dfoOaA"/>
+      </messages>
+      <properties xmi:id="_k4haGo80EeupeID-dfoOaA" name="target" lowerBound="1" type="_k4hZeY80EeupeID-dfoOaA"/>
+      <formalGates xmi:id="_k4haG480EeupeID-dfoOaA" message="_k4haBY80EeupeID-dfoOaA" name="in_add"/>
+      <formalGates xmi:id="_k4haHI80EeupeID-dfoOaA" message="_k4haCY80EeupeID-dfoOaA" name="out_add"/>
+      <formalGates xmi:id="_k4haHY80EeupeID-dfoOaA" message="_k4haDo80EeupeID-dfoOaA" name="out_add"/>
+      <formalGates xmi:id="_k4haHo80EeupeID-dfoOaA" message="_k4haFI80EeupeID-dfoOaA" name="out_add"/>
+      <formalGates xmi:id="_k4haH480EeupeID-dfoOaA" message="_k4haGI80EeupeID-dfoOaA" name="out_add"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_k4haII80EeupeID-dfoOaA" specifies="_k4hZfI80EeupeID-dfoOaA">
+    <specification xmi:id="_k4haIY80EeupeID-dfoOaA">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haIo80EeupeID-dfoOaA" covered="_k4haNI80EeupeID-dfoOaA" message="_k4haN480EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_k4haI480EeupeID-dfoOaA" covered="_k4haNI80EeupeID-dfoOaA" interactionOperator="opt">
+        <operands xmi:id="_k4haJI80EeupeID-dfoOaA">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haJY80EeupeID-dfoOaA" covered="_k4haNI80EeupeID-dfoOaA" message="_k4haQI80EeupeID-dfoOaA"/>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_k4haJo80EeupeID-dfoOaA" body="a == null" language="java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haJ480EeupeID-dfoOaA" covered="_k4haNI80EeupeID-dfoOaA" message="_k4haQo80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haKI80EeupeID-dfoOaA" covered="_k4haNo80EeupeID-dfoOaA" message="_k4haQo80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haKY80EeupeID-dfoOaA" covered="_k4haNo80EeupeID-dfoOaA" message="_k4haRY80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haKo80EeupeID-dfoOaA" covered="_k4haNI80EeupeID-dfoOaA" message="_k4haRY80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_k4haK480EeupeID-dfoOaA" covered="_k4haNI80EeupeID-dfoOaA" interactionOperator="opt">
+        <operands xmi:id="_k4haLI80EeupeID-dfoOaA">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haLY80EeupeID-dfoOaA" covered="_k4haNI80EeupeID-dfoOaA" message="_k4haRo80EeupeID-dfoOaA"/>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_k4haLo80EeupeID-dfoOaA" body="!wasSet" language="java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haL480EeupeID-dfoOaA" covered="_k4haNI80EeupeID-dfoOaA" message="_k4haPI80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haMI80EeupeID-dfoOaA" covered="_k4haNY80EeupeID-dfoOaA" message="_k4haPI80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haMY80EeupeID-dfoOaA" covered="_k4haNY80EeupeID-dfoOaA" message="_k4haP480EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haMo80EeupeID-dfoOaA" covered="_k4haNI80EeupeID-dfoOaA" message="_k4haP480EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haM480EeupeID-dfoOaA" covered="_k4haNI80EeupeID-dfoOaA" message="_k4haOo80EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_k4haNI80EeupeID-dfoOaA" represents="_k4haSI80EeupeID-dfoOaA" coveredBy="_k4haIo80EeupeID-dfoOaA _k4haM480EeupeID-dfoOaA _k4haL480EeupeID-dfoOaA _k4haMo80EeupeID-dfoOaA _k4haI480EeupeID-dfoOaA _k4haJY80EeupeID-dfoOaA _k4haJ480EeupeID-dfoOaA _k4haKo80EeupeID-dfoOaA _k4haK480EeupeID-dfoOaA _k4haLY80EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_k4haNY80EeupeID-dfoOaA" represents="_k4hZh480EeupeID-dfoOaA" coveredBy="_k4haMI80EeupeID-dfoOaA _k4haMY80EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_k4haNo80EeupeID-dfoOaA" represents="_k4hZfY80EeupeID-dfoOaA" coveredBy="_k4haKI80EeupeID-dfoOaA _k4haKY80EeupeID-dfoOaA"/>
+      <messages xmi:id="_k4haN480EeupeID-dfoOaA" sendEvent="_k4haSY80EeupeID-dfoOaA" receiveEvent="_k4haIo80EeupeID-dfoOaA" signature="_k4hZfI80EeupeID-dfoOaA">
+        <localProperties xsi:type="ram:Attribute" xmi:id="_k4haOI80EeupeID-dfoOaA" name="removed" type="_k4hZmI80EeupeID-dfoOaA"/>
+        <localProperties xsi:type="ram:Attribute" xmi:id="_k4haOY80EeupeID-dfoOaA" name="wasSet" type="_k4hZmI80EeupeID-dfoOaA"/>
+      </messages>
+      <messages xmi:id="_k4haOo80EeupeID-dfoOaA" sendEvent="_k4haM480EeupeID-dfoOaA" receiveEvent="_k4haSo80EeupeID-dfoOaA" signature="_k4hZfI80EeupeID-dfoOaA" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_k4haO480EeupeID-dfoOaA" value="_k4haOI80EeupeID-dfoOaA"/>
+      </messages>
+      <messages xmi:id="_k4haPI80EeupeID-dfoOaA" sendEvent="_k4haL480EeupeID-dfoOaA" receiveEvent="_k4haMI80EeupeID-dfoOaA" signature="_k4hZi480EeupeID-dfoOaA" assignTo="_k4haOI80EeupeID-dfoOaA">
+        <arguments xmi:id="_k4haPY80EeupeID-dfoOaA" parameter="_k4hZjI80EeupeID-dfoOaA">
+          <value xsi:type="ram:ParameterValue" xmi:id="_k4haPo80EeupeID-dfoOaA" parameter="_k4hZfY80EeupeID-dfoOaA"/>
+        </arguments>
+      </messages>
+      <messages xmi:id="_k4haP480EeupeID-dfoOaA" sendEvent="_k4haMY80EeupeID-dfoOaA" receiveEvent="_k4haMo80EeupeID-dfoOaA" signature="_k4hZi480EeupeID-dfoOaA" messageSort="reply"/>
+      <messages xmi:id="_k4haQI80EeupeID-dfoOaA" sendEvent="_k4haJY80EeupeID-dfoOaA" receiveEvent="_k4haS480EeupeID-dfoOaA" signature="_k4hZfI80EeupeID-dfoOaA" messageSort="reply">
+        <returns xsi:type="ram:LiteralBoolean" xmi:id="_k4haQY80EeupeID-dfoOaA"/>
+      </messages>
+      <messages xmi:id="_k4haQo80EeupeID-dfoOaA" sendEvent="_k4haJ480EeupeID-dfoOaA" receiveEvent="_k4haKI80EeupeID-dfoOaA" signature="_k4hZc480EeupeID-dfoOaA" assignTo="_k4haOY80EeupeID-dfoOaA">
+        <arguments xmi:id="_k4haQ480EeupeID-dfoOaA" parameter="_k4hZdI80EeupeID-dfoOaA">
+          <value xsi:type="ram:LiteralNull" xmi:id="_k4haRI80EeupeID-dfoOaA"/>
+        </arguments>
+      </messages>
+      <messages xmi:id="_k4haRY80EeupeID-dfoOaA" sendEvent="_k4haKY80EeupeID-dfoOaA" receiveEvent="_k4haKo80EeupeID-dfoOaA" messageSort="reply"/>
+      <messages xmi:id="_k4haRo80EeupeID-dfoOaA" sendEvent="_k4haLY80EeupeID-dfoOaA" receiveEvent="_k4haTI80EeupeID-dfoOaA" signature="_k4hZfI80EeupeID-dfoOaA" messageSort="reply">
+        <returns xsi:type="ram:LiteralBoolean" xmi:id="_k4haR480EeupeID-dfoOaA"/>
+      </messages>
+      <properties xmi:id="_k4haSI80EeupeID-dfoOaA" name="target" lowerBound="1" type="_k4hZeY80EeupeID-dfoOaA"/>
+      <formalGates xmi:id="_k4haSY80EeupeID-dfoOaA" message="_k4haN480EeupeID-dfoOaA" name="in_remove"/>
+      <formalGates xmi:id="_k4haSo80EeupeID-dfoOaA" message="_k4haOo80EeupeID-dfoOaA" name="out_remove"/>
+      <formalGates xmi:id="_k4haS480EeupeID-dfoOaA" message="_k4haQI80EeupeID-dfoOaA" name="out_remove"/>
+      <formalGates xmi:id="_k4haTI80EeupeID-dfoOaA" message="_k4haRo80EeupeID-dfoOaA" name="out_remove"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_k4haTY80EeupeID-dfoOaA" specifies="_k4hZg480EeupeID-dfoOaA">
+    <specification xmi:id="_k4haTo80EeupeID-dfoOaA">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haT480EeupeID-dfoOaA" covered="_k4haVY80EeupeID-dfoOaA" message="_k4haV480EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haUI80EeupeID-dfoOaA" covered="_k4haVY80EeupeID-dfoOaA" message="_k4haW480EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haUY80EeupeID-dfoOaA" covered="_k4haVo80EeupeID-dfoOaA" message="_k4haW480EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haUo80EeupeID-dfoOaA" covered="_k4haVo80EeupeID-dfoOaA" message="_k4haXo80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haU480EeupeID-dfoOaA" covered="_k4haVY80EeupeID-dfoOaA" message="_k4haXo80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haVI80EeupeID-dfoOaA" covered="_k4haVY80EeupeID-dfoOaA" message="_k4haWY80EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_k4haVY80EeupeID-dfoOaA" represents="_k4haX480EeupeID-dfoOaA" coveredBy="_k4haT480EeupeID-dfoOaA _k4haVI80EeupeID-dfoOaA _k4haUI80EeupeID-dfoOaA _k4haU480EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_k4haVo80EeupeID-dfoOaA" represents="_k4hZh480EeupeID-dfoOaA" coveredBy="_k4haUY80EeupeID-dfoOaA _k4haUo80EeupeID-dfoOaA"/>
+      <messages xmi:id="_k4haV480EeupeID-dfoOaA" sendEvent="_k4haYI80EeupeID-dfoOaA" receiveEvent="_k4haT480EeupeID-dfoOaA" signature="_k4hZg480EeupeID-dfoOaA">
+        <localProperties xsi:type="ram:Attribute" xmi:id="_k4haWI80EeupeID-dfoOaA" name="contains" type="_k4hZmI80EeupeID-dfoOaA"/>
+      </messages>
+      <messages xmi:id="_k4haWY80EeupeID-dfoOaA" sendEvent="_k4haVI80EeupeID-dfoOaA" receiveEvent="_k4haYY80EeupeID-dfoOaA" signature="_k4hZg480EeupeID-dfoOaA" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_k4haWo80EeupeID-dfoOaA" value="_k4haWI80EeupeID-dfoOaA"/>
+      </messages>
+      <messages xmi:id="_k4haW480EeupeID-dfoOaA" sendEvent="_k4haUI80EeupeID-dfoOaA" receiveEvent="_k4haUY80EeupeID-dfoOaA" signature="_k4hZjo80EeupeID-dfoOaA" assignTo="_k4haWI80EeupeID-dfoOaA">
+        <arguments xmi:id="_k4haXI80EeupeID-dfoOaA" parameter="_k4hZj480EeupeID-dfoOaA">
+          <value xsi:type="ram:ParameterValue" xmi:id="_k4haXY80EeupeID-dfoOaA" parameter="_k4hZhI80EeupeID-dfoOaA"/>
+        </arguments>
+      </messages>
+      <messages xmi:id="_k4haXo80EeupeID-dfoOaA" sendEvent="_k4haUo80EeupeID-dfoOaA" receiveEvent="_k4haU480EeupeID-dfoOaA" signature="_k4hZjo80EeupeID-dfoOaA" messageSort="reply"/>
+      <properties xmi:id="_k4haX480EeupeID-dfoOaA" name="target" lowerBound="1" type="_k4hZeY80EeupeID-dfoOaA"/>
+      <formalGates xmi:id="_k4haYI80EeupeID-dfoOaA" message="_k4haV480EeupeID-dfoOaA" name="in_contains"/>
+      <formalGates xmi:id="_k4haYY80EeupeID-dfoOaA" message="_k4haWY80EeupeID-dfoOaA" name="out_contains"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_k4haYo80EeupeID-dfoOaA" specifies="_k4hZhY80EeupeID-dfoOaA">
+    <specification xmi:id="_k4haY480EeupeID-dfoOaA">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haZI80EeupeID-dfoOaA" covered="_k4haao80EeupeID-dfoOaA" message="_k4habI80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haZY80EeupeID-dfoOaA" covered="_k4haao80EeupeID-dfoOaA" message="_k4hacI80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haZo80EeupeID-dfoOaA" covered="_k4haa480EeupeID-dfoOaA" message="_k4hacI80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haZ480EeupeID-dfoOaA" covered="_k4haa480EeupeID-dfoOaA" message="_k4hacY80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haaI80EeupeID-dfoOaA" covered="_k4haao80EeupeID-dfoOaA" message="_k4hacY80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haaY80EeupeID-dfoOaA" covered="_k4haao80EeupeID-dfoOaA" message="_k4habo80EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_k4haao80EeupeID-dfoOaA" represents="_k4haco80EeupeID-dfoOaA" coveredBy="_k4haZI80EeupeID-dfoOaA _k4haaY80EeupeID-dfoOaA _k4haZY80EeupeID-dfoOaA _k4haaI80EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_k4haa480EeupeID-dfoOaA" represents="_k4hZh480EeupeID-dfoOaA" coveredBy="_k4haZo80EeupeID-dfoOaA _k4haZ480EeupeID-dfoOaA"/>
+      <messages xmi:id="_k4habI80EeupeID-dfoOaA" sendEvent="_k4hac480EeupeID-dfoOaA" receiveEvent="_k4haZI80EeupeID-dfoOaA" signature="_k4hZhY80EeupeID-dfoOaA">
+        <localProperties xsi:type="ram:Attribute" xmi:id="_k4habY80EeupeID-dfoOaA" name="size" type="_k4hZmY80EeupeID-dfoOaA"/>
+      </messages>
+      <messages xmi:id="_k4habo80EeupeID-dfoOaA" sendEvent="_k4haaY80EeupeID-dfoOaA" receiveEvent="_k4hadI80EeupeID-dfoOaA" signature="_k4hZhY80EeupeID-dfoOaA" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_k4hab480EeupeID-dfoOaA" value="_k4habY80EeupeID-dfoOaA"/>
+      </messages>
+      <messages xmi:id="_k4hacI80EeupeID-dfoOaA" sendEvent="_k4haZY80EeupeID-dfoOaA" receiveEvent="_k4haZo80EeupeID-dfoOaA" signature="_k4hZkI80EeupeID-dfoOaA" assignTo="_k4habY80EeupeID-dfoOaA"/>
+      <messages xmi:id="_k4hacY80EeupeID-dfoOaA" sendEvent="_k4haZ480EeupeID-dfoOaA" receiveEvent="_k4haaI80EeupeID-dfoOaA" signature="_k4hZkI80EeupeID-dfoOaA" messageSort="reply"/>
+      <properties xmi:id="_k4haco80EeupeID-dfoOaA" name="target" lowerBound="1" type="_k4hZeY80EeupeID-dfoOaA"/>
+      <formalGates xmi:id="_k4hac480EeupeID-dfoOaA" message="_k4habI80EeupeID-dfoOaA" name="in_size"/>
+      <formalGates xmi:id="_k4hadI80EeupeID-dfoOaA" message="_k4habo80EeupeID-dfoOaA" name="out_size"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_k4hadY80EeupeID-dfoOaA" specifies="_k4hZho80EeupeID-dfoOaA">
+    <specification xmi:id="_k4hado80EeupeID-dfoOaA">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4had480EeupeID-dfoOaA" covered="_k4haeY80EeupeID-dfoOaA" message="_k4haeo80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4haeI80EeupeID-dfoOaA" covered="_k4haeY80EeupeID-dfoOaA" message="_k4hae480EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_k4haeY80EeupeID-dfoOaA" represents="_k4hafY80EeupeID-dfoOaA" coveredBy="_k4had480EeupeID-dfoOaA _k4haeI80EeupeID-dfoOaA"/>
+      <messages xmi:id="_k4haeo80EeupeID-dfoOaA" sendEvent="_k4hafo80EeupeID-dfoOaA" receiveEvent="_k4had480EeupeID-dfoOaA" signature="_k4hZho80EeupeID-dfoOaA"/>
+      <messages xmi:id="_k4hae480EeupeID-dfoOaA" sendEvent="_k4haeI80EeupeID-dfoOaA" receiveEvent="_k4haf480EeupeID-dfoOaA" signature="_k4hZho80EeupeID-dfoOaA" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_k4hafI80EeupeID-dfoOaA" value="_k4hZh480EeupeID-dfoOaA"/>
+      </messages>
+      <properties xmi:id="_k4hafY80EeupeID-dfoOaA" name="target" lowerBound="1" type="_k4hZeY80EeupeID-dfoOaA"/>
+      <formalGates xmi:id="_k4hafo80EeupeID-dfoOaA" message="_k4haeo80EeupeID-dfoOaA" name="in_getAssociated"/>
+      <formalGates xmi:id="_k4haf480EeupeID-dfoOaA" message="_k4hae480EeupeID-dfoOaA" name="out_getAssociated"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_k4hagI80EeupeID-dfoOaA" specifies="_k4hZgo80EeupeID-dfoOaA">
+    <specification xmi:id="_k4hagY80EeupeID-dfoOaA">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hago80EeupeID-dfoOaA" covered="_k4haho80EeupeID-dfoOaA" message="_k4haiI80EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hag480EeupeID-dfoOaA" covered="_k4haho80EeupeID-dfoOaA" message="_k4hai480EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hahI80EeupeID-dfoOaA" covered="_k4hah480EeupeID-dfoOaA" message="_k4hai480EeupeID-dfoOaA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_k4hahY80EeupeID-dfoOaA" covered="_k4haho80EeupeID-dfoOaA" message="_k4haio80EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_k4haho80EeupeID-dfoOaA" represents="_k4hajI80EeupeID-dfoOaA" coveredBy="_k4hago80EeupeID-dfoOaA _k4hahY80EeupeID-dfoOaA _k4hag480EeupeID-dfoOaA"/>
+      <lifelines xmi:id="_k4hah480EeupeID-dfoOaA" represents="_k4haiY80EeupeID-dfoOaA" coveredBy="_k4hahI80EeupeID-dfoOaA"/>
+      <messages xmi:id="_k4haiI80EeupeID-dfoOaA" sendEvent="_k4hajY80EeupeID-dfoOaA" receiveEvent="_k4hago80EeupeID-dfoOaA" signature="_k4hZgo80EeupeID-dfoOaA" messageSort="createMessage">
+        <localProperties xsi:type="ram:Reference" xmi:id="_k4haiY80EeupeID-dfoOaA" name="collection" lowerBound="1" type="_k4hZiI80EeupeID-dfoOaA"/>
+      </messages>
+      <messages xmi:id="_k4haio80EeupeID-dfoOaA" sendEvent="_k4hahY80EeupeID-dfoOaA" receiveEvent="_k4hajo80EeupeID-dfoOaA" signature="_k4hZgo80EeupeID-dfoOaA" messageSort="reply"/>
+      <messages xmi:id="_k4hai480EeupeID-dfoOaA" sendEvent="_k4hag480EeupeID-dfoOaA" receiveEvent="_k4hahI80EeupeID-dfoOaA" signature="_k4hZjY80EeupeID-dfoOaA" assignTo="_k4haiY80EeupeID-dfoOaA" messageSort="createMessage"/>
+      <properties xmi:id="_k4hajI80EeupeID-dfoOaA" name="target" lowerBound="1" type="_k4hZeY80EeupeID-dfoOaA"/>
+      <formalGates xmi:id="_k4hajY80EeupeID-dfoOaA" message="_k4haiI80EeupeID-dfoOaA" name="in_create"/>
+      <formalGates xmi:id="_k4hajo80EeupeID-dfoOaA" message="_k4haio80EeupeID-dfoOaA" name="out_create"/>
+    </specification>
+  </messageViews>
+  <layout xmi:id="_k4haj480EeupeID-dfoOaA">
+    <containers xmi:id="_k4hakI80EeupeID-dfoOaA" key="_k4hZcY80EeupeID-dfoOaA"/>
+  </layout>
+  <wovenAspects xmi:id="_k4hakY80EeupeID-dfoOaA" name="Association">
+    <comesFrom href="Association.ram#_mDv4YEQ1EeSSfO86-u_zzA"/>
+    <wovenElements xmi:id="_k4hako80EeupeID-dfoOaA" key="_k4hZeY80EeupeID-dfoOaA">
+      <value xsi:type="ram:Class" href="Association.ram#_stleMHdvEeGm3uH8rYfPgw"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4hak480EeupeID-dfoOaA" key="_k4hZco80EeupeID-dfoOaA">
+      <value xsi:type="ram:Class" href="Association.ram#_R4j4oIdeEeG0oPAT5BSQFQ"/>
+    </wovenElements>
+  </wovenAspects>
+  <wovenAspects xmi:id="_k4halI80EeupeID-dfoOaA" name="OneOpposite">
+    <comesFrom href="OneOpposite.ram#_45LS8H2JEeW19p3ERnXRPg"/>
+    <wovenElements xmi:id="_k4halY80EeupeID-dfoOaA" key="_k4hZeY80EeupeID-dfoOaA">
+      <value xsi:type="ram:Class" href="OneOpposite.ram#__uacIKQ7EeW5K4ceX5rGYQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4halo80EeupeID-dfoOaA" key="_k4hZco80EeupeID-dfoOaA">
+      <value xsi:type="ram:Class" href="OneOpposite.ram#_45LS9H2JEeW19p3ERnXRPg"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4hal480EeupeID-dfoOaA" key="_k4hZdo80EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="OneOpposite.ram#_45LS9n2JEeW19p3ERnXRPg"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4hamI80EeupeID-dfoOaA" key="_k4hZc480EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="OneOpposite.ram#_HF6OIKQ8EeW5K4ceX5rGYQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4hamY80EeupeID-dfoOaA" key="_k4hZdY80EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="OneOpposite.ram#_45LS9X2JEeW19p3ERnXRPg"/>
+    </wovenElements>
+  </wovenAspects>
+  <wovenAspects xmi:id="_k4hamo80EeupeID-dfoOaA" name="Many">
+    <comesFrom href="Many.ram#_4opdQH2BEeWIy5MXlHNV-w"/>
+    <wovenElements xmi:id="_k4ham480EeupeID-dfoOaA" key="_k4hZgo80EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="Many.ram#_nurMgOq7EeWy6cPK1HfUhA"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4hanI80EeupeID-dfoOaA" key="_k4hZhY80EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="Many.ram#_YXIBMH2CEeWIy5MXlHNV-w"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4hanY80EeupeID-dfoOaA" key="_k4hZho80EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="Many.ram#_ZgQMcH2CEeWIy5MXlHNV-w"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4hano80EeupeID-dfoOaA" key="_k4hZkI80EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="Many.ram#_lA1TsH2CEeWIy5MXlHNV-w"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4han480EeupeID-dfoOaA" key="_k4hZiI80EeupeID-dfoOaA">
+      <value xsi:type="ram:Class" href="Many.ram#_4opdRH2BEeWIy5MXlHNV-w"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4haoI80EeupeID-dfoOaA" key="_k4hZjY80EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="Many.ram#_kCfOoOq7EeWy6cPK1HfUhA"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4haoY80EeupeID-dfoOaA" key="_k4hZg480EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="Many.ram#_LDkgcH2CEeWIy5MXlHNV-w"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4haoo80EeupeID-dfoOaA" key="_k4hZjo80EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="Many.ram#_h0EcwH2CEeWIy5MXlHNV-w"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4hao480EeupeID-dfoOaA" key="_k4hZeY80EeupeID-dfoOaA">
+      <value xsi:type="ram:Class" href="Many.ram#_4opdQ32BEeWIy5MXlHNV-w"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4hapI80EeupeID-dfoOaA" key="_k4hZco80EeupeID-dfoOaA">
+      <value xsi:type="ram:Class" href="Many.ram#_4opdQn2BEeWIy5MXlHNV-w"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4hapY80EeupeID-dfoOaA" key="_k4hZk480EeupeID-dfoOaA">
+      <value xsi:type="ram:Class" href="Many.ram#_cPYFIH2CEeWIy5MXlHNV-w"/>
+    </wovenElements>
+  </wovenAspects>
+  <wovenAspects xmi:id="_k4hapo80EeupeID-dfoOaA" name="Plain">
+    <comesFrom href="Plain.ram#_BqUAIH2EEeWIy5MXlHNV-w"/>
+    <wovenElements xmi:id="_k4hap480EeupeID-dfoOaA" key="_k4hZeY80EeupeID-dfoOaA">
+      <value xsi:type="ram:Class" href="Plain.ram#_BqUAIn2EEeWIy5MXlHNV-w"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4haqI80EeupeID-dfoOaA" key="_k4hZiI80EeupeID-dfoOaA">
+      <value xsi:type="ram:Class" href="Plain.ram#_BqUAI32EEeWIy5MXlHNV-w"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4haqY80EeupeID-dfoOaA" key="_k4hZk480EeupeID-dfoOaA">
+      <value xsi:type="ram:Class" href="Plain.ram#_8dKT4JN-EeWuj6cnGIk9Uw"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4haqo80EeupeID-dfoOaA" key="_k4hZfI80EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="Plain.ram#_dToOEH2bEeW19p3ERnXRPg"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4haq480EeupeID-dfoOaA" key="_k4hZiY80EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="Plain.ram#_hsEN8H2bEeW19p3ERnXRPg"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4harI80EeupeID-dfoOaA" key="_k4hZi480EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="Plain.ram#_jaVGkH2bEeW19p3ERnXRPg"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4harY80EeupeID-dfoOaA" key="_k4hZeo80EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="Plain.ram#_WIk8oH2bEeW19p3ERnXRPg"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4haro80EeupeID-dfoOaA" key="_k4hZco80EeupeID-dfoOaA">
+      <value xsi:type="ram:Class" href="Plain.ram#_PqLZUKW9EeW5vr47q3SVSw"/>
+    </wovenElements>
+  </wovenAspects>
+  <wovenAspects xmi:id="_k4har480EeupeID-dfoOaA" name="Maximum">
+    <comesFrom href="Maximum.ram#_mc1c8Jk0EeW5PZgeQVCCQw"/>
+    <wovenElements xmi:id="_k4hasI80EeupeID-dfoOaA" key="_k4hZco80EeupeID-dfoOaA">
+      <value xsi:type="ram:Class" href="Maximum.ram#_DXhdQLuoEeW028A7arQj9g"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4hasY80EeupeID-dfoOaA" key="_k4hZeo80EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="Maximum.ram#_q6AL0Jk0EeW5PZgeQVCCQw"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4haso80EeupeID-dfoOaA" key="_k4hZeY80EeupeID-dfoOaA">
+      <value xsi:type="ram:Class" href="Maximum.ram#_mc1c8pk0EeW5PZgeQVCCQw"/>
+    </wovenElements>
+  </wovenAspects>
+  <wovenAspects xmi:id="_k4has480EeupeID-dfoOaA" name="PlainBidirectional">
+    <comesFrom href="PlainBidirectional.ram#_jaNdwJelEeWDJ7UGl9szkQ"/>
+    <wovenElements xmi:id="_k4hatI80EeupeID-dfoOaA" key="_k4hZgI80EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="PlainBidirectional.ram#_AMevQJemEeWDJ7UGl9szkQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4hatY80EeupeID-dfoOaA" key="_k4hZfo80EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="PlainBidirectional.ram#_-VmGIJelEeWDJ7UGl9szkQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4hato80EeupeID-dfoOaA" key="_k4hZco80EeupeID-dfoOaA">
+      <value xsi:type="ram:Class" href="PlainBidirectional.ram#_s1va8KXFEeW5vr47q3SVSw"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4hat480EeupeID-dfoOaA" key="_k4hZeY80EeupeID-dfoOaA">
+      <value xsi:type="ram:Class" href="PlainBidirectional.ram#_jaNdwpelEeWDJ7UGl9szkQ"/>
+    </wovenElements>
+  </wovenAspects>
+  <wovenAspects xmi:id="_k4hauI80EeupeID-dfoOaA" name="MaximumPlainBidirectional">
+    <comesFrom href="MaximumPlainBidirectional.ram#_nZf24KNjEeWU0LOAsKVUHw"/>
+  </wovenAspects>
+  <wovenAspects xmi:id="_k4hauY80EeupeID-dfoOaA" name="PlainToOne">
+    <comesFrom href="PlainToOne.ram#_xTf9oI41EeW7itA9KmBi2g"/>
+    <wovenElements xmi:id="_k4hauo80EeupeID-dfoOaA" key="_k4hZco80EeupeID-dfoOaA">
+      <value xsi:type="ram:Class" href="PlainToOne.ram#_9l2LUJhBEeWa55V5tAd23Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4hau480EeupeID-dfoOaA" key="_k4hZeo80EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="PlainToOne.ram#_P_6noI42EeW7itA9KmBi2g"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4havI80EeupeID-dfoOaA" key="_k4hZc480EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="PlainToOne.ram#_DADxQJhCEeWa55V5tAd23Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4havY80EeupeID-dfoOaA" key="_k4hZeY80EeupeID-dfoOaA">
+      <value xsi:type="ram:Class" href="PlainToOne.ram#_xTf9oo41EeW7itA9KmBi2g"/>
+    </wovenElements>
+    <wovenElements xmi:id="_k4havo80EeupeID-dfoOaA" key="_k4hZfI80EeupeID-dfoOaA">
+      <value xsi:type="ram:Operation" href="PlainToOne.ram#_dW9hQI42EeW7itA9KmBi2g"/>
+    </wovenElements>
+  </wovenAspects>
+  <wovenAspects xmi:id="_k4hav480EeupeID-dfoOaA" name="MaximumPlainToOne">
+    <comesFrom href="MaximumPlainToOne.ram#_9qztgJk2EeW5PZgeQVCCQw"/>
+  </wovenAspects>
+</ram:Aspect>
