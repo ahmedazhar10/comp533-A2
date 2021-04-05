@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_1bS04JAIEeuxdNCaKPeeAw" name="OperationExecutionLog">
+  <modelReuses xmi:id="_1bS04ZAIEeuxdNCaKPeeAw">
+    <compositions xsi:type="ram:Instantiation" xmi:id="_1bS04pAIEeuxdNCaKPeeAw">
+      <source xsi:type="ram:Aspect" href="Reused_Association/Woven_Association_Association_One.ram#_9NoJwI_9EeuxdNCaKPeeAw"/>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_1bS045AIEeuxdNCaKPeeAw" to="_1bS06JAIEeuxdNCaKPeeAw">
+        <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_One.ram#_9NoJx4_9EeuxdNCaKPeeAw"/>
+      </mappings>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_1bS05JAIEeuxdNCaKPeeAw" to="_1bS06pAIEeuxdNCaKPeeAw">
+        <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_One.ram#_9NoJwo_9EeuxdNCaKPeeAw"/>
+        <operationMappings xmi:id="_1bS05ZAIEeuxdNCaKPeeAw" to="_1bS065AIEeuxdNCaKPeeAw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_One.ram#_9NoJw4_9EeuxdNCaKPeeAw"/>
+        </operationMappings>
+        <operationMappings xmi:id="_1bS05pAIEeuxdNCaKPeeAw" to="_1bS07JAIEeuxdNCaKPeeAw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_One.ram#_9NoJxI_9EeuxdNCaKPeeAw"/>
+        </operationMappings>
+      </mappings>
+    </compositions>
+    <reuse href="Logging.core#_z5RBcJAIEeuxdNCaKPeeAw"/>
+  </modelReuses>
+  <realizes href="Logging.core#_MBtjwI_rEeuxdNCaKPeeAw"/>
+  <coreConcern href="Logging.core#_Gi2HUI_rEeuxdNCaKPeeAw"/>
+  <structuralView xmi:id="_1bS055AIEeuxdNCaKPeeAw">
+    <classes xsi:type="ram:Class" xmi:id="_1bS06JAIEeuxdNCaKPeeAw" name="LoggedResource">
+      <associationEnds xmi:id="_1bS06ZAIEeuxdNCaKPeeAw" name="myLoggableManager" lowerBound="1" navigable="false" assoc="_1bS08JAIEeuxdNCaKPeeAw"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_1bS06pAIEeuxdNCaKPeeAw" name="LoggableManager">
+      <operations xmi:id="_1bS065AIEeuxdNCaKPeeAw" name="getMyLoggedResource" extendedVisibility="package" returnType="_1bS06JAIEeuxdNCaKPeeAw"/>
+      <operations xmi:id="_1bS07JAIEeuxdNCaKPeeAw" name="setMyLoggedResource" extendedVisibility="package" returnType="_1bS085AIEeuxdNCaKPeeAw">
+        <parameters xmi:id="_1bS07ZAIEeuxdNCaKPeeAw" name="newObject" type="_1bS06JAIEeuxdNCaKPeeAw"/>
+      </operations>
+      <associationEnds xmi:id="_1bS07pAIEeuxdNCaKPeeAw" name="myLoggedResource" assoc="_1bS08JAIEeuxdNCaKPeeAw" featureSelection="_1bS04ZAIEeuxdNCaKPeeAw"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_1bS075AIEeuxdNCaKPeeAw" name="NotLoggedException"/>
+    <associations xmi:id="_1bS08JAIEeuxdNCaKPeeAw" name="LoggableManager_LoggedResource" ends="_1bS07pAIEeuxdNCaKPeeAw _1bS06ZAIEeuxdNCaKPeeAw"/>
+    <types xsi:type="ram:RVoid" xmi:id="_1bS08ZAIEeuxdNCaKPeeAw"/>
+    <types xsi:type="ram:RAny" xmi:id="_1bS08pAIEeuxdNCaKPeeAw"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_1bS085AIEeuxdNCaKPeeAw"/>
+    <types xsi:type="ram:RInt" xmi:id="_1bS09JAIEeuxdNCaKPeeAw"/>
+    <types xsi:type="ram:RChar" xmi:id="_1bS09ZAIEeuxdNCaKPeeAw"/>
+    <types xsi:type="ram:RString" xmi:id="_1bS09pAIEeuxdNCaKPeeAw"/>
+    <types xsi:type="ram:RDouble" xmi:id="_1bS095AIEeuxdNCaKPeeAw"/>
+    <types xsi:type="ram:RFloat" xmi:id="_1bS0-JAIEeuxdNCaKPeeAw"/>
+    <types xsi:type="ram:RLong" xmi:id="_1bS0-ZAIEeuxdNCaKPeeAw"/>
+    <types xsi:type="ram:RByte" xmi:id="_1bS0-pAIEeuxdNCaKPeeAw"/>
+  </structuralView>
+  <instantiations xmi:id="_1bS0-5AIEeuxdNCaKPeeAw">
+    <source xsi:type="ram:Aspect" href="Logging.ram#__qEygJAHEeuxdNCaKPeeAw"/>
+  </instantiations>
+  <layout xmi:id="_1bS0_JAIEeuxdNCaKPeeAw">
+    <containers xmi:id="_1bS0_ZAIEeuxdNCaKPeeAw" key="_1bS055AIEeuxdNCaKPeeAw">
+      <value xmi:id="_1bS0_pAIEeuxdNCaKPeeAw" key="_1bS06JAIEeuxdNCaKPeeAw">
+        <value xmi:id="_1bS0_5AIEeuxdNCaKPeeAw" x="564.0" y="165.0"/>
+      </value>
+      <value xmi:id="_1bS1AJAIEeuxdNCaKPeeAw" key="_1bS06pAIEeuxdNCaKPeeAw">
+        <value xmi:id="_1bS1AZAIEeuxdNCaKPeeAw" x="356.0" y="342.0"/>
+      </value>
+      <value xmi:id="_1bS1ApAIEeuxdNCaKPeeAw" key="_1bS075AIEeuxdNCaKPeeAw">
+        <value xmi:id="_1bS1A5AIEeuxdNCaKPeeAw" x="702.0" y="311.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_Gi2HUI_rEeuxdNCaKPeeAw" name="Logging">
+  <models xsi:type="core:COREFeatureModel" href="#_Gi2HUY_rEeuxdNCaKPeeAw"/>
+  <models xsi:type="ram:Aspect" href="Logging.ram#__qEygJAHEeuxdNCaKPeeAw"/>
+  <models xsi:type="ram:Aspect" href="OperationExecutionLog.ram#_1bS04JAIEeuxdNCaKPeeAw"/>
+  <featureModel xmi:id="_Gi2HUY_rEeuxdNCaKPeeAw" coreConcern="_Gi2HUI_rEeuxdNCaKPeeAw" root="_Gi2HUo_rEeuxdNCaKPeeAw">
+    <features xmi:id="_Gi2HUo_rEeuxdNCaKPeeAw" name="Logging" children="_I4tLcI_rEeuxdNCaKPeeAw _KkFvMI_rEeuxdNCaKPeeAw _MBtjwI_rEeuxdNCaKPeeAw _NqT5QI_rEeuxdNCaKPeeAw">
+      <realizedBy xsi:type="ram:Aspect" href="Logging.ram#__qEygJAHEeuxdNCaKPeeAw"/>
+      <reuses xmi:id="_N02lQI__EeuxdNCaKPeeAw" name="Association_Session_Loggable" selectedConfiguration="_N02lQY__EeuxdNCaKPeeAw">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_N02lQY__EeuxdNCaKPeeAw" name="Automatic selection" reuse="_N02lQI__EeuxdNCaKPeeAw">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_nEJnAACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_EnSLwH19EeW8vqKd4iftUw"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_ohs-MJAGEeuxdNCaKPeeAw" name="Association_LoggableManager_Credential" selectedConfiguration="_ohs-MZAGEeuxdNCaKPeeAw">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_ohs-MZAGEeuxdNCaKPeeAw" name="Automatic selection" reuse="_ohs-MJAGEeuxdNCaKPeeAw">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_nEJnAACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_EnSLwH19EeW8vqKd4iftUw"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_I4tLcI_rEeuxdNCaKPeeAw" name="ScreenLog" parent="_Gi2HUo_rEeuxdNCaKPeeAw" parentRelationship="Optional"/>
+    <features xmi:id="_KkFvMI_rEeuxdNCaKPeeAw" name="FileLog" parent="_Gi2HUo_rEeuxdNCaKPeeAw" parentRelationship="Optional"/>
+    <features xmi:id="_MBtjwI_rEeuxdNCaKPeeAw" name="OperationExecutionLog" parent="_Gi2HUo_rEeuxdNCaKPeeAw" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="OperationExecutionLog.ram#_1bS04JAIEeuxdNCaKPeeAw"/>
+      <reuses xmi:id="_z5RBcJAIEeuxdNCaKPeeAw" name="Association_LoggableManager_LoggedResource" selectedConfiguration="_z5RBcZAIEeuxdNCaKPeeAw">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_z5RBcZAIEeuxdNCaKPeeAw" name="Automatic selection" reuse="_z5RBcJAIEeuxdNCaKPeeAw">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_nEJnAACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_EnSLwH19EeW8vqKd4iftUw"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_NqT5QI_rEeuxdNCaKPeeAw" name="OperationExectionTimeLog" parent="_Gi2HUo_rEeuxdNCaKPeeAw" parentRelationship="Optional"/>
+  </featureModel>
+</core:COREConcern>
