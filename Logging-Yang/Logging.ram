@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_FWKFcI9hEeunsMN4WDheQA" name="Logging">
+  <realizes href="Logging.core#_UsT3QY85EeuPNqvpThWfrg"/>
+  <coreConcern href="Logging.core#_UsSpII85EeuPNqvpThWfrg"/>
+  <structuralView xmi:id="_FWKFcY9hEeunsMN4WDheQA">
+    <classes xsi:type="ram:Class" xmi:id="_FWKFco9hEeunsMN4WDheQA" name="Object">
+      <associationEnds xmi:id="_FWKFc49hEeunsMN4WDheQA" name="myLoggingConfig" lowerBound="1" assoc="_FWKFdo9hEeunsMN4WDheQA"/>
+      <associationEnds xmi:id="_pyNgoZACEeumepeVo5GriQ" name="monitoredBy" lowerBound="1" assoc="_pyOHsJACEeumepeVo5GriQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_FWKFdI9hEeunsMN4WDheQA" name="LoggingConfig" visibility="public">
+      <operations xmi:id="_h7s-AI9rEeunsMN4WDheQA" name="enableLogToScreen" visibility="public" returnType="_FWKFd49hEeunsMN4WDheQA"/>
+      <operations xmi:id="_tVbPUI9rEeunsMN4WDheQA" name="disableLogToScreen" visibility="public" returnType="_FWKFd49hEeunsMN4WDheQA"/>
+      <operations xmi:id="_1QKRQI9rEeunsMN4WDheQA" name="enableLogToFile" visibility="public" returnType="_FWKFd49hEeunsMN4WDheQA">
+        <parameters xmi:id="_1QKRQY9rEeunsMN4WDheQA" name="file" type="_FWKFfI9hEeunsMN4WDheQA"/>
+      </operations>
+      <operations xmi:id="_3ubqgI9rEeunsMN4WDheQA" name="disableLogToFile" visibility="public" returnType="_FWKFd49hEeunsMN4WDheQA"/>
+      <operations xmi:id="_l1HzcJAXEeuws5PYBIhXdw" name="getLogToScreen" visibility="public" returnType="_FWKFeY9hEeunsMN4WDheQA"/>
+      <operations xmi:id="_n-iXAJAXEeuws5PYBIhXdw" name="getLogToFile" visibility="public" returnType="_FWKFeY9hEeunsMN4WDheQA"/>
+      <operations xmi:id="_QY1mIJAZEeuws5PYBIhXdw" name="getLogFilePath" visibility="public" returnType="_FWKFfI9hEeunsMN4WDheQA"/>
+      <associationEnds xmi:id="_FWKFdY9hEeunsMN4WDheQA" name="myObject" lowerBound="1" navigable="false" assoc="_FWKFdo9hEeunsMN4WDheQA"/>
+      <associationEnds xmi:id="_ECOi8Y9iEeunsMN4WDheQA" name="myLogFile" assoc="_ECPKAI9iEeunsMN4WDheQA"/>
+      <associationEnds xmi:id="_VZTt0ZACEeumepeVo5GriQ" name="myLogger" lowerBound="1" assoc="_VZTt0pACEeumepeVo5GriQ"/>
+      <attributes xmi:id="_o1eBQI9iEeunsMN4WDheQA" name="logToScreen" type="_FWKFeY9hEeunsMN4WDheQA"/>
+      <attributes xmi:id="_sDQy8I9iEeunsMN4WDheQA" name="logToFile" type="_FWKFeY9hEeunsMN4WDheQA"/>
+      <attributes xmi:id="_nXFFgJADEeumepeVo5GriQ" name="logFilePath" type="_FWKFfI9hEeunsMN4WDheQA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_2LdncI9hEeunsMN4WDheQA" name="LogFile">
+      <associationEnds xmi:id="_ECOi8I9iEeunsMN4WDheQA" name="usedBy" lowerBound="1" upperBound="-1" assoc="_ECPKAI9iEeunsMN4WDheQA"/>
+      <associationEnds xmi:id="_wsMFoZABEeumepeVo5GriQ" name="writtenBy" assoc="_wsMFopABEeumepeVo5GriQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_rJ5hwJABEeumepeVo5GriQ" name="Logger" visibility="public">
+      <operations xmi:id="_CKLMMJASEeuws5PYBIhXdw" name="logExeMessage" visibility="public" returnType="_FWKFd49hEeunsMN4WDheQA">
+        <parameters xmi:id="_CKLMMpASEeuws5PYBIhXdw" name="exeMessage" type="_FWKFfI9hEeunsMN4WDheQA"/>
+      </operations>
+      <operations xmi:id="_J6oQwJASEeuws5PYBIhXdw" name="logExeTimeMessage" visibility="public" returnType="_FWKFd49hEeunsMN4WDheQA">
+        <parameters xmi:id="_J6oQwZASEeuws5PYBIhXdw" name="exeTimeMessage" type="_FWKFfI9hEeunsMN4WDheQA"/>
+      </operations>
+      <associationEnds xmi:id="_wsMFoJABEeumepeVo5GriQ" name="writesTo" lowerBound="1" assoc="_wsMFopABEeumepeVo5GriQ"/>
+      <associationEnds xmi:id="_VZTt0JACEeumepeVo5GriQ" name="controlledBy" lowerBound="1" upperBound="-1" assoc="_VZTt0pACEeumepeVo5GriQ"/>
+      <associationEnds xmi:id="_pyNgoJACEeumepeVo5GriQ" name="monitors" lowerBound="1" upperBound="-1" assoc="_pyOHsJACEeumepeVo5GriQ"/>
+    </classes>
+    <associations xmi:id="_FWKFdo9hEeunsMN4WDheQA" name="Object_LoggingConfig" ends="_FWKFc49hEeunsMN4WDheQA _FWKFdY9hEeunsMN4WDheQA"/>
+    <associations xmi:id="_ECPKAI9iEeunsMN4WDheQA" name="LogFile_LoggingConfig" ends="_ECOi8I9iEeunsMN4WDheQA _ECOi8Y9iEeunsMN4WDheQA"/>
+    <associations xmi:id="_wsMFopABEeumepeVo5GriQ" name="Logger_LogFile" ends="_wsMFoJABEeumepeVo5GriQ _wsMFoZABEeumepeVo5GriQ"/>
+    <associations xmi:id="_VZTt0pACEeumepeVo5GriQ" name="Logger_LoggingConfig" ends="_VZTt0JACEeumepeVo5GriQ _VZTt0ZACEeumepeVo5GriQ"/>
+    <associations xmi:id="_pyOHsJACEeumepeVo5GriQ" name="Logger_Object" ends="_pyNgoJACEeumepeVo5GriQ _pyNgoZACEeumepeVo5GriQ"/>
+    <types xsi:type="ram:RVoid" xmi:id="_FWKFd49hEeunsMN4WDheQA"/>
+    <types xsi:type="ram:RAny" xmi:id="_FWKFeI9hEeunsMN4WDheQA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_FWKFeY9hEeunsMN4WDheQA"/>
+    <types xsi:type="ram:RInt" xmi:id="_FWKFeo9hEeunsMN4WDheQA"/>
+    <types xsi:type="ram:RChar" xmi:id="_FWKFe49hEeunsMN4WDheQA"/>
+    <types xsi:type="ram:RString" xmi:id="_FWKFfI9hEeunsMN4WDheQA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_FWKFfY9hEeunsMN4WDheQA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_FWKFfo9hEeunsMN4WDheQA"/>
+    <types xsi:type="ram:RLong" xmi:id="_FWKFf49hEeunsMN4WDheQA"/>
+    <types xsi:type="ram:RByte" xmi:id="_FWKsgI9hEeunsMN4WDheQA"/>
+  </structuralView>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_OZsSgpAREeuws5PYBIhXdw" specifies="_h7s-AI9rEeunsMN4WDheQA">
+    <specification xmi:id="_OZsSg5AREeuws5PYBIhXdw">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_OZsShJAREeuws5PYBIhXdw" covered="_OZsShpAREeuws5PYBIhXdw" message="_OZsSh5AREeuws5PYBIhXdw"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_OZsShZAREeuws5PYBIhXdw" covered="_OZsShpAREeuws5PYBIhXdw" message="_OZsSiJAREeuws5PYBIhXdw"/>
+      <lifelines xmi:id="_OZsShpAREeuws5PYBIhXdw" represents="_OZsSiZAREeuws5PYBIhXdw" coveredBy="_OZsShJAREeuws5PYBIhXdw _OZsShZAREeuws5PYBIhXdw"/>
+      <messages xmi:id="_OZsSh5AREeuws5PYBIhXdw" sendEvent="_OZsSipAREeuws5PYBIhXdw" receiveEvent="_OZsShJAREeuws5PYBIhXdw" signature="_h7s-AI9rEeunsMN4WDheQA"/>
+      <messages xmi:id="_OZsSiJAREeuws5PYBIhXdw" sendEvent="_OZsShZAREeuws5PYBIhXdw" receiveEvent="_OZsSi5AREeuws5PYBIhXdw" signature="_h7s-AI9rEeunsMN4WDheQA" messageSort="reply"/>
+      <properties xmi:id="_OZsSiZAREeuws5PYBIhXdw" name="target" lowerBound="1" type="_FWKFdI9hEeunsMN4WDheQA"/>
+      <formalGates xmi:id="_OZsSipAREeuws5PYBIhXdw" message="_OZsSh5AREeuws5PYBIhXdw" name="in_enableLogToScreen"/>
+      <formalGates xmi:id="_OZsSi5AREeuws5PYBIhXdw" message="_OZsSiJAREeuws5PYBIhXdw" name="out_enableLogToScreen"/>
+    </specification>
+  </messageViews>
+  <layout xmi:id="_FWL6oI9hEeunsMN4WDheQA">
+    <containers xmi:id="_FWL6oY9hEeunsMN4WDheQA" key="_FWKFcY9hEeunsMN4WDheQA">
+      <value xmi:id="_FWL6oo9hEeunsMN4WDheQA" key="_FWKFco9hEeunsMN4WDheQA">
+        <value xmi:id="_FWL6o49hEeunsMN4WDheQA" x="33.999786" y="148.82515"/>
+      </value>
+      <value xmi:id="_FWL6pI9hEeunsMN4WDheQA" key="_FWKFdI9hEeunsMN4WDheQA">
+        <value xmi:id="_FWL6pY9hEeunsMN4WDheQA" x="557.50195" y="133.98245"/>
+      </value>
+      <value xmi:id="_2LeOgI9hEeunsMN4WDheQA" key="_2LdncI9hEeunsMN4WDheQA">
+        <value xmi:id="_2LeOgY9hEeunsMN4WDheQA" x="722.0019" y="668.513"/>
+      </value>
+      <value xmi:id="_rJ6I0JABEeumepeVo5GriQ" key="_rJ5hwJABEeumepeVo5GriQ">
+        <value xmi:id="_rJ6v4JABEeumepeVo5GriQ" x="22.998901" y="656.513"/>
+      </value>
+    </containers>
+    <containers xmi:id="_OZrrcJAREeuws5PYBIhXdw" key="_OZsSgpAREeuws5PYBIhXdw">
+      <value xmi:id="_OZsSgJAREeuws5PYBIhXdw" key="_OZsShpAREeuws5PYBIhXdw">
+        <value xmi:id="_OZsSgZAREeuws5PYBIhXdw" x="100.0" y="100.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

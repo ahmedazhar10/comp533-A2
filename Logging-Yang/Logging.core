@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_UsSpII85EeuPNqvpThWfrg" name="Logging">
+  <models xsi:type="core:COREFeatureModel" href="#_UsT3QI85EeuPNqvpThWfrg"/>
+  <models xsi:type="ram:Aspect" href="Logging.ram#_FWKFcI9hEeunsMN4WDheQA"/>
+  <models xsi:type="ram:Aspect" href="LogOperationExecution.ram#_KoBFwJATEeuws5PYBIhXdw"/>
+  <featureModel xmi:id="_UsT3QI85EeuPNqvpThWfrg" coreConcern="_UsSpII85EeuPNqvpThWfrg" root="_UsT3QY85EeuPNqvpThWfrg">
+    <features xmi:id="_UsT3QY85EeuPNqvpThWfrg" name="Logging" children="_Vm8o0I9gEeunsMN4WDheQA _efTJkI9gEeunsMN4WDheQA _kqx0YI9gEeunsMN4WDheQA _xLEk0I9jEeunsMN4WDheQA">
+      <realizedBy xsi:type="ram:Aspect" href="Logging.ram#_FWKFcI9hEeunsMN4WDheQA"/>
+    </features>
+    <features xmi:id="_Vm8o0I9gEeunsMN4WDheQA" name="LoggingConfig" children="_qv5YgI9gEeunsMN4WDheQA _sV8JQI9gEeunsMN4WDheQA" parent="_UsT3QY85EeuPNqvpThWfrg" parentRelationship="Mandatory"/>
+    <features xmi:id="_efTJkI9gEeunsMN4WDheQA" name="LogOperationExecution" parent="_UsT3QY85EeuPNqvpThWfrg" parentRelationship="Mandatory">
+      <realizedBy xsi:type="ram:Aspect" href="LogOperationExecution.ram#_KoBFwJATEeuws5PYBIhXdw"/>
+    </features>
+    <features xmi:id="_kqx0YI9gEeunsMN4WDheQA" name="LogOperationExecutionTime" parent="_UsT3QY85EeuPNqvpThWfrg" parentRelationship="Mandatory"/>
+    <features xmi:id="_qv5YgI9gEeunsMN4WDheQA" name="LogToScreen" children="_uhLRwI9gEeunsMN4WDheQA _webooI9gEeunsMN4WDheQA" parent="_Vm8o0I9gEeunsMN4WDheQA" parentRelationship="Optional"/>
+    <features xmi:id="_sV8JQI9gEeunsMN4WDheQA" name="LogToFile" children="_x5DMgI9gEeunsMN4WDheQA _ywDF8I9gEeunsMN4WDheQA" parent="_Vm8o0I9gEeunsMN4WDheQA" parentRelationship="Optional"/>
+    <features xmi:id="_uhLRwI9gEeunsMN4WDheQA" name="Enabled" parent="_qv5YgI9gEeunsMN4WDheQA" parentRelationship="XOR"/>
+    <features xmi:id="_webooI9gEeunsMN4WDheQA" name="Disabled" parent="_qv5YgI9gEeunsMN4WDheQA" parentRelationship="XOR"/>
+    <features xmi:id="_x5DMgI9gEeunsMN4WDheQA" name="Enabled" parent="_sV8JQI9gEeunsMN4WDheQA" parentRelationship="XOR"/>
+    <features xmi:id="_ywDF8I9gEeunsMN4WDheQA" name="Disabled" parent="_sV8JQI9gEeunsMN4WDheQA" parentRelationship="XOR"/>
+    <features xmi:id="_xLEk0I9jEeunsMN4WDheQA" name="Logger" parent="_UsT3QY85EeuPNqvpThWfrg" parentRelationship="Mandatory"/>
+  </featureModel>
+</core:COREConcern>
