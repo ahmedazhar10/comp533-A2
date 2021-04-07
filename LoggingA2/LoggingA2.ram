@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_f-FeQJfQEeuXjqog77XYRA" name="LoggingA2">
+  <modelReuses xmi:id="_O0-LwJfREeuXjqog77XYRA">
+    <compositions xsi:type="ram:Instantiation" xmi:id="_O0-LwZfREeuXjqog77XYRA">
+      <source xsi:type="ram:Aspect" href="Reused_Association/Woven_Association_Association_One.ram#_O089oJfREeuXjqog77XYRA"/>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_O0-LwpfREeuXjqog77XYRA" to="_KKxtgJfREeuXjqog77XYRA">
+        <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_One.ram#_O089p5fREeuXjqog77XYRA"/>
+      </mappings>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_O0-Lw5fREeuXjqog77XYRA" to="_f-FeQpfQEeuXjqog77XYRA">
+        <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_One.ram#_O089opfREeuXjqog77XYRA"/>
+        <operationMappings xmi:id="_O0-LxJfREeuXjqog77XYRA" to="_O0-y0JfREeuXjqog77XYRA">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_One.ram#_O089o5fREeuXjqog77XYRA"/>
+        </operationMappings>
+        <operationMappings xmi:id="_O0-LxZfREeuXjqog77XYRA" to="_O0_Z4JfREeuXjqog77XYRA">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_One.ram#_O089pJfREeuXjqog77XYRA"/>
+        </operationMappings>
+      </mappings>
+    </compositions>
+    <reuse href="LoggingA2.core#_O0-LxpfREeuXjqog77XYRA"/>
+  </modelReuses>
+  <realizes href="LoggingA2.core#_fpRhUpfPEeuXjqog77XYRA"/>
+  <coreConcern href="LoggingA2.core#_fpRhUJfPEeuXjqog77XYRA"/>
+  <structuralView xmi:id="_f-FeQZfQEeuXjqog77XYRA">
+    <classes xsi:type="ram:Class" xmi:id="_f-FeQpfQEeuXjqog77XYRA" name="Session">
+      <operations xmi:id="_O0-y0JfREeuXjqog77XYRA" name="getCurrentLoggable" extendedVisibility="package" returnType="_KKxtgJfREeuXjqog77XYRA"/>
+      <operations xmi:id="_O0_Z4JfREeuXjqog77XYRA" name="setCurrentLoggable" extendedVisibility="package" returnType="_f-FeRZfQEeuXjqog77XYRA">
+        <parameters xmi:id="_O0_Z4ZfREeuXjqog77XYRA" name="newObject" type="_KKxtgJfREeuXjqog77XYRA"/>
+      </operations>
+      <associationEnds xmi:id="_OzXCMJfREeuXjqog77XYRA" name="currentLoggable" lowerBound="1" assoc="_OzXpQZfREeuXjqog77XYRA" featureSelection="_O0-LwJfREeuXjqog77XYRA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_KKxtgJfREeuXjqog77XYRA" name="Loggable" partiality="public">
+      <associationEnds xmi:id="_OzXpQJfREeuXjqog77XYRA" name="mySession" lowerBound="1" navigable="false" assoc="_OzXpQZfREeuXjqog77XYRA"/>
+    </classes>
+    <associations xmi:id="_OzXpQZfREeuXjqog77XYRA" name="Session_Loggable" ends="_OzXCMJfREeuXjqog77XYRA _OzXpQJfREeuXjqog77XYRA"/>
+    <types xsi:type="ram:RVoid" xmi:id="_f-FeQ5fQEeuXjqog77XYRA"/>
+    <types xsi:type="ram:RAny" xmi:id="_f-FeRJfQEeuXjqog77XYRA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_f-FeRZfQEeuXjqog77XYRA"/>
+    <types xsi:type="ram:RInt" xmi:id="_f-FeRpfQEeuXjqog77XYRA"/>
+    <types xsi:type="ram:RChar" xmi:id="_f-FeR5fQEeuXjqog77XYRA"/>
+    <types xsi:type="ram:RString" xmi:id="_f-FeSJfQEeuXjqog77XYRA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_f-FeSZfQEeuXjqog77XYRA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_f-FeSpfQEeuXjqog77XYRA"/>
+    <types xsi:type="ram:RLong" xmi:id="_f-FeS5fQEeuXjqog77XYRA"/>
+    <types xsi:type="ram:RByte" xmi:id="_f-FeTJfQEeuXjqog77XYRA"/>
+  </structuralView>
+  <layout xmi:id="_f-FeTZfQEeuXjqog77XYRA">
+    <containers xmi:id="_f-GFUJfQEeuXjqog77XYRA" key="_f-FeQZfQEeuXjqog77XYRA">
+      <value xmi:id="_f-GFUZfQEeuXjqog77XYRA" key="_f-FeQpfQEeuXjqog77XYRA">
+        <value xmi:id="_f-GFUpfQEeuXjqog77XYRA" x="171.00003" y="307.99985"/>
+      </value>
+      <value xmi:id="_KKyUkJfREeuXjqog77XYRA" key="_KKxtgJfREeuXjqog77XYRA">
+        <value xmi:id="_KKyUkZfREeuXjqog77XYRA" x="430.00018" y="189.00003"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

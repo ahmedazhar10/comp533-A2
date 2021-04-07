@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_fpRhUJfPEeuXjqog77XYRA" name="LoggingA2">
+  <models xsi:type="core:COREFeatureModel" href="#_fpRhUZfPEeuXjqog77XYRA"/>
+  <models xsi:type="ram:Aspect" href="LoggingA2.ram#_f-FeQJfQEeuXjqog77XYRA"/>
+  <featureModel xmi:id="_fpRhUZfPEeuXjqog77XYRA" coreConcern="_fpRhUJfPEeuXjqog77XYRA" root="_fpRhUpfPEeuXjqog77XYRA">
+    <features xmi:id="_fpRhUpfPEeuXjqog77XYRA" name="LoggingA2" children="_ixAHQJfPEeuXjqog77XYRA _ln8fMJfPEeuXjqog77XYRA">
+      <realizedBy xsi:type="ram:Aspect" href="LoggingA2.ram#_f-FeQJfQEeuXjqog77XYRA"/>
+      <reuses xmi:id="_O0-LxpfREeuXjqog77XYRA" name="Association_Session_Loggable" selectedConfiguration="_O0-Lx5fREeuXjqog77XYRA">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_O0-Lx5fREeuXjqog77XYRA" name="Automatic selection" reuse="_O0-LxpfREeuXjqog77XYRA">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_nEJnAACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_EnSLwH19EeW8vqKd4iftUw"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_ixAHQJfPEeuXjqog77XYRA" name="LoggingOperationExecution" children="_v3y-YJfPEeuXjqog77XYRA" parent="_fpRhUpfPEeuXjqog77XYRA" parentRelationship="Mandatory"/>
+    <features xmi:id="_ln8fMJfPEeuXjqog77XYRA" name="LoggingOptions" children="_ps9MwJfPEeuXjqog77XYRA _r4f3QJfPEeuXjqog77XYRA" parent="_fpRhUpfPEeuXjqog77XYRA" parentRelationship="Mandatory"/>
+    <features xmi:id="_ps9MwJfPEeuXjqog77XYRA" name="LogToScreen" parent="_ln8fMJfPEeuXjqog77XYRA" parentRelationship="OR"/>
+    <features xmi:id="_r4f3QJfPEeuXjqog77XYRA" name="LogToFile" parent="_ln8fMJfPEeuXjqog77XYRA" parentRelationship="OR"/>
+    <features xmi:id="_v3y-YJfPEeuXjqog77XYRA" name="LogExecutionTime" parent="_ixAHQJfPEeuXjqog77XYRA" parentRelationship="Optional"/>
+  </featureModel>
+</core:COREConcern>
