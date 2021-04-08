@@ -18,6 +18,24 @@
     </compositions>
     <reuse href="LoggingA2.core#_O0-LxpfREeuXjqog77XYRA"/>
   </modelReuses>
+  <modelReuses xmi:id="_yYClIJihEeu6Yf5fZZ3drA">
+    <compositions xsi:type="ram:Instantiation" xmi:id="_yYClIZihEeu6Yf5fZZ3drA">
+      <source xsi:type="ram:Aspect" href="Reused_Association/Woven_Association_Association_One.ram#_O089oJfREeuXjqog77XYRA"/>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_yYClIpihEeu6Yf5fZZ3drA" to="_zM93cJigEeu6Yf5fZZ3drA">
+        <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_One.ram#_O089p5fREeuXjqog77XYRA"/>
+      </mappings>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_yYClI5ihEeu6Yf5fZZ3drA" to="_YN3-UJihEeu6Yf5fZZ3drA">
+        <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_One.ram#_O089opfREeuXjqog77XYRA"/>
+        <operationMappings xmi:id="_yYClJJihEeu6Yf5fZZ3drA" to="_yYDMMJihEeu6Yf5fZZ3drA">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_One.ram#_O089o5fREeuXjqog77XYRA"/>
+        </operationMappings>
+        <operationMappings xmi:id="_yYClJZihEeu6Yf5fZZ3drA" to="_yYDzQJihEeu6Yf5fZZ3drA">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_One.ram#_O089pJfREeuXjqog77XYRA"/>
+        </operationMappings>
+      </mappings>
+    </compositions>
+    <reuse href="LoggingA2.core#_yYClJpihEeu6Yf5fZZ3drA"/>
+  </modelReuses>
   <realizes href="LoggingA2.core#_fpRhUpfPEeuXjqog77XYRA"/>
   <coreConcern href="LoggingA2.core#_fpRhUJfPEeuXjqog77XYRA"/>
   <structuralView xmi:id="_f-FeQZfQEeuXjqog77XYRA">
@@ -26,12 +44,46 @@
       <operations xmi:id="_O0_Z4JfREeuXjqog77XYRA" name="setCurrentLoggable" extendedVisibility="package" returnType="_f-FeRZfQEeuXjqog77XYRA">
         <parameters xmi:id="_O0_Z4ZfREeuXjqog77XYRA" name="newObject" type="_KKxtgJfREeuXjqog77XYRA"/>
       </operations>
+      <operations xmi:id="_DxtRkJigEeu6Yf5fZZ3drA" name="getCurrentSession" extendedVisibility="package" returnType="_f-FeQpfQEeuXjqog77XYRA"/>
+      <operations xmi:id="_Mho2IJigEeu6Yf5fZZ3drA" name="setCurrentLogged" extendedVisibility="package" returnType="_f-FeQ5fQEeuXjqog77XYRA">
+        <parameters xmi:id="_Mho2IZigEeu6Yf5fZZ3drA" name="a" type="_KKxtgJfREeuXjqog77XYRA"/>
+      </operations>
+      <operations xmi:id="_PoqRcJigEeu6Yf5fZZ3drA" name="getCurrentLogged" extendedVisibility="package" returnType="_KKxtgJfREeuXjqog77XYRA"/>
       <associationEnds xmi:id="_OzXCMJfREeuXjqog77XYRA" name="currentLoggable" lowerBound="1" assoc="_OzXpQZfREeuXjqog77XYRA" featureSelection="_O0-LwJfREeuXjqog77XYRA"/>
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_KKxtgJfREeuXjqog77XYRA" name="Loggable" partiality="public">
       <associationEnds xmi:id="_OzXpQJfREeuXjqog77XYRA" name="mySession" lowerBound="1" navigable="false" assoc="_OzXpQZfREeuXjqog77XYRA"/>
     </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hMNAsJigEeu6Yf5fZZ3drA" name="LoggableException" visibility="public">
+      <operations xmi:id="_v7I6UJigEeu6Yf5fZZ3drA" name="create" visibility="public" returnType="_KKxtgJfREeuXjqog77XYRA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_zM93cJigEeu6Yf5fZZ3drA" name="Credential" partiality="concern">
+      <operations xmi:id="_-P1vAJigEeu6Yf5fZZ3drA" name="check" partiality="public" extendedVisibility="package" returnType="_f-FeRZfQEeuXjqog77XYRA">
+        <parameters xmi:id="_-P1vAZigEeu6Yf5fZZ3drA" name="other" type="_zM93cJigEeu6Yf5fZZ3drA"/>
+      </operations>
+      <associationEnds xmi:id="_whHfwJihEeu6Yf5fZZ3drA" name="myLogger" lowerBound="1" navigable="false" assoc="_whHfwZihEeu6Yf5fZZ3drA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_YN3-UJihEeu6Yf5fZZ3drA" name="LoggableManager" visibility="public">
+      <operations xmi:id="_djf_MJihEeu6Yf5fZZ3drA" name="create" visibility="public" returnType="_KKxtgJfREeuXjqog77XYRA"/>
+      <operations xmi:id="_ifCFEJihEeu6Yf5fZZ3drA" name="authenticate" visibility="public" returnType="_f-FeRZfQEeuXjqog77XYRA">
+        <parameters xmi:id="_ifCFEZihEeu6Yf5fZZ3drA" name="a" type="_KKxtgJfREeuXjqog77XYRA"/>
+        <parameters xmi:id="_ifCFEpihEeu6Yf5fZZ3drA" name="c" type="_zM93cJigEeu6Yf5fZZ3drA"/>
+      </operations>
+      <operations xmi:id="_oZUSMJihEeu6Yf5fZZ3drA" name="putCredentials" visibility="public" returnType="_f-FeQ5fQEeuXjqog77XYRA">
+        <parameters xmi:id="_oZUSMZihEeu6Yf5fZZ3drA" name="a" type="_KKxtgJfREeuXjqog77XYRA"/>
+        <parameters xmi:id="_oZUSMpihEeu6Yf5fZZ3drA" name="c" type="_zM93cJigEeu6Yf5fZZ3drA"/>
+      </operations>
+      <operations xmi:id="_sL5zAJihEeu6Yf5fZZ3drA" name="getCredential" extendedVisibility="package" returnType="_zM93cJigEeu6Yf5fZZ3drA">
+        <parameters xmi:id="_sL5zAZihEeu6Yf5fZZ3drA" name="e" type="_KKxtgJfREeuXjqog77XYRA"/>
+      </operations>
+      <operations xmi:id="_yYDMMJihEeu6Yf5fZZ3drA" name="getCredentials" extendedVisibility="package" returnType="_zM93cJigEeu6Yf5fZZ3drA"/>
+      <operations xmi:id="_yYDzQJihEeu6Yf5fZZ3drA" name="setCredentials" extendedVisibility="package" returnType="_f-FeRZfQEeuXjqog77XYRA">
+        <parameters xmi:id="_yYDzQZihEeu6Yf5fZZ3drA" name="newObject" type="_zM93cJigEeu6Yf5fZZ3drA"/>
+      </operations>
+      <associationEnds xmi:id="_whG4sJihEeu6Yf5fZZ3drA" name="credentials" assoc="_whHfwZihEeu6Yf5fZZ3drA" featureSelection="_yYClIJihEeu6Yf5fZZ3drA"/>
+    </classes>
     <associations xmi:id="_OzXpQZfREeuXjqog77XYRA" name="Session_Loggable" ends="_OzXCMJfREeuXjqog77XYRA _OzXpQJfREeuXjqog77XYRA"/>
+    <associations xmi:id="_whHfwZihEeu6Yf5fZZ3drA" name="Logger_Credential" ends="_whG4sJihEeu6Yf5fZZ3drA _whHfwJihEeu6Yf5fZZ3drA"/>
     <types xsi:type="ram:RVoid" xmi:id="_f-FeQ5fQEeuXjqog77XYRA"/>
     <types xsi:type="ram:RAny" xmi:id="_f-FeRJfQEeuXjqog77XYRA"/>
     <types xsi:type="ram:RBoolean" xmi:id="_f-FeRZfQEeuXjqog77XYRA"/>
@@ -46,10 +98,19 @@
   <layout xmi:id="_f-FeTZfQEeuXjqog77XYRA">
     <containers xmi:id="_f-GFUJfQEeuXjqog77XYRA" key="_f-FeQZfQEeuXjqog77XYRA">
       <value xmi:id="_f-GFUZfQEeuXjqog77XYRA" key="_f-FeQpfQEeuXjqog77XYRA">
-        <value xmi:id="_f-GFUpfQEeuXjqog77XYRA" x="171.00003" y="307.99985"/>
+        <value xmi:id="_f-GFUpfQEeuXjqog77XYRA" x="75.18041" y="375.63733"/>
       </value>
       <value xmi:id="_KKyUkJfREeuXjqog77XYRA" key="_KKxtgJfREeuXjqog77XYRA">
         <value xmi:id="_KKyUkZfREeuXjqog77XYRA" x="430.00018" y="189.00003"/>
+      </value>
+      <value xmi:id="_hMOO0JigEeu6Yf5fZZ3drA" key="_hMNAsJigEeu6Yf5fZZ3drA">
+        <value xmi:id="_hMOO0ZigEeu6Yf5fZZ3drA" x="663.1741" y="189.00003"/>
+      </value>
+      <value xmi:id="_zM_FkJigEeu6Yf5fZZ3drA" key="_zM93cJigEeu6Yf5fZZ3drA">
+        <value xmi:id="_zM_FkZigEeu6Yf5fZZ3drA" x="191.591" y="631.6065"/>
+      </value>
+      <value xmi:id="_YN5McJihEeu6Yf5fZZ3drA" key="_YN3-UJihEeu6Yf5fZZ3drA">
+        <value xmi:id="_YN5McZihEeu6Yf5fZZ3drA" x="555.1741" y="362.63733"/>
       </value>
     </containers>
   </layout>

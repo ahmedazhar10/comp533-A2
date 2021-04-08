@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_LutY0JiqEeu6Yf5fZZ3drA" name="LogToScreen">
+  <realizes href="LoggingA2.core#_ps9MwJfPEeuXjqog77XYRA"/>
+  <coreConcern href="LoggingA2.core#_fpRhUJfPEeuXjqog77XYRA"/>
+  <structuralView xmi:id="_LutY0ZiqEeu6Yf5fZZ3drA">
+    <classes xsi:type="ram:Class" xmi:id="_LutY0piqEeu6Yf5fZZ3drA" name="Logger" visibility="public">
+      <operations xmi:id="_LutY05iqEeu6Yf5fZZ3drA" name="setScreen" visibility="public" returnType="_LutY2JiqEeu6Yf5fZZ3drA">
+        <parameters xmi:id="_LutY1JiqEeu6Yf5fZZ3drA" name="enable" type="_LutY2piqEeu6Yf5fZZ3drA"/>
+      </operations>
+      <operations xmi:id="_LutY1ZiqEeu6Yf5fZZ3drA" name="printMessage" visibility="public" returnType="_LutY2JiqEeu6Yf5fZZ3drA">
+        <parameters xmi:id="_LutY1piqEeu6Yf5fZZ3drA" name="logMessage" type="_LutY3ZiqEeu6Yf5fZZ3drA"/>
+      </operations>
+      <attributes xmi:id="_LutY15iqEeu6Yf5fZZ3drA" name="screenEnabled" type="_LutY2piqEeu6Yf5fZZ3drA"/>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_LutY2JiqEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RAny" xmi:id="_LutY2ZiqEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_LutY2piqEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RInt" xmi:id="_LutY25iqEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RChar" xmi:id="_LutY3JiqEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RString" xmi:id="_LutY3ZiqEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_LutY3piqEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_LutY35iqEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RLong" xmi:id="_LutY4JiqEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RByte" xmi:id="_LutY4ZiqEeu6Yf5fZZ3drA"/>
+  </structuralView>
+  <instantiations xmi:id="_LutY4piqEeu6Yf5fZZ3drA">
+    <source xsi:type="ram:Aspect" href="LoggingOptions.ram#_j3PJ8JioEeu6Yf5fZZ3drA"/>
+  </instantiations>
+  <layout xmi:id="_LutY45iqEeu6Yf5fZZ3drA">
+    <containers xmi:id="_LutY5JiqEeu6Yf5fZZ3drA" key="_LutY0ZiqEeu6Yf5fZZ3drA">
+      <value xmi:id="_LutY5ZiqEeu6Yf5fZZ3drA" key="_LutY0piqEeu6Yf5fZZ3drA">
+        <value xmi:id="_LutY5piqEeu6Yf5fZZ3drA" x="555.9998" y="252.99997"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

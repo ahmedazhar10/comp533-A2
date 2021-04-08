@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_e0YpMJiqEeu6Yf5fZZ3drA" name="LogToFile">
+  <realizes href="LoggingA2.core#_r4f3QJfPEeuXjqog77XYRA"/>
+  <coreConcern href="LoggingA2.core#_fpRhUJfPEeuXjqog77XYRA"/>
+  <structuralView xmi:id="_e0YpMZiqEeu6Yf5fZZ3drA">
+    <classes xsi:type="ram:Class" xmi:id="_e0YpMpiqEeu6Yf5fZZ3drA" name="Logger" visibility="public">
+      <operations xmi:id="_e0YpM5iqEeu6Yf5fZZ3drA" name="setFile" visibility="public" returnType="_e0YpOZiqEeu6Yf5fZZ3drA">
+        <parameters xmi:id="_e0YpNJiqEeu6Yf5fZZ3drA" name="enable" type="_e0YpO5iqEeu6Yf5fZZ3drA"/>
+      </operations>
+      <operations xmi:id="_e0YpNZiqEeu6Yf5fZZ3drA" name="writeLogMessage" visibility="public" returnType="_e0YpOZiqEeu6Yf5fZZ3drA">
+        <parameters xmi:id="_e0YpNpiqEeu6Yf5fZZ3drA" name="LogMessage" type="_e0YpPpiqEeu6Yf5fZZ3drA"/>
+        <parameters xmi:id="_e0YpN5iqEeu6Yf5fZZ3drA" name="filepath" type="_e0YpPpiqEeu6Yf5fZZ3drA"/>
+      </operations>
+      <attributes xmi:id="_e0YpOJiqEeu6Yf5fZZ3drA" name="fileEnabled" type="_e0YpO5iqEeu6Yf5fZZ3drA"/>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_e0YpOZiqEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RAny" xmi:id="_e0YpOpiqEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_e0YpO5iqEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RInt" xmi:id="_e0YpPJiqEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RChar" xmi:id="_e0YpPZiqEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RString" xmi:id="_e0YpPpiqEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_e0YpP5iqEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_e0YpQJiqEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RLong" xmi:id="_e0YpQZiqEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RByte" xmi:id="_e0YpQpiqEeu6Yf5fZZ3drA"/>
+  </structuralView>
+  <instantiations xmi:id="_e0YpQ5iqEeu6Yf5fZZ3drA">
+    <source xsi:type="ram:Aspect" href="LoggingOptions.ram#_j3PJ8JioEeu6Yf5fZZ3drA"/>
+  </instantiations>
+  <layout xmi:id="_e0YpRJiqEeu6Yf5fZZ3drA">
+    <containers xmi:id="_e0YpRZiqEeu6Yf5fZZ3drA" key="_e0YpMZiqEeu6Yf5fZZ3drA">
+      <value xmi:id="_e0YpRpiqEeu6Yf5fZZ3drA" key="_e0YpMpiqEeu6Yf5fZZ3drA">
+        <value xmi:id="_e0YpR5iqEeu6Yf5fZZ3drA" x="508.00006" y="234.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

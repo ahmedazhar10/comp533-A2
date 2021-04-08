@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_j3PJ8JioEeu6Yf5fZZ3drA" name="LoggingOptions">
+  <realizes href="LoggingA2.core#_ln8fMJfPEeuXjqog77XYRA"/>
+  <coreConcern href="LoggingA2.core#_fpRhUJfPEeuXjqog77XYRA"/>
+  <structuralView xmi:id="_j3PJ8ZioEeu6Yf5fZZ3drA">
+    <types xsi:type="ram:RVoid" xmi:id="_j3PJ8pioEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RAny" xmi:id="_j3PJ85ioEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_j3PJ9JioEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RInt" xmi:id="_j3PJ9ZioEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RChar" xmi:id="_j3PJ9pioEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RString" xmi:id="_j3PJ95ioEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_j3PJ-JioEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_j3PJ-ZioEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RLong" xmi:id="_j3PJ-pioEeu6Yf5fZZ3drA"/>
+    <types xsi:type="ram:RByte" xmi:id="_j3PJ-5ioEeu6Yf5fZZ3drA"/>
+  </structuralView>
+  <instantiations xmi:id="_j3PJ_JioEeu6Yf5fZZ3drA">
+    <source xsi:type="ram:Aspect" href="LoggingA2.ram#_f-FeQJfQEeuXjqog77XYRA"/>
+  </instantiations>
+  <layout xmi:id="_j3PJ_ZioEeu6Yf5fZZ3drA">
+    <containers xmi:id="_j3PJ_pioEeu6Yf5fZZ3drA" key="_j3PJ8ZioEeu6Yf5fZZ3drA"/>
+  </layout>
+</ram:Aspect>
