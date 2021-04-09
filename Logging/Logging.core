@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_Od9NQJluEeufzZ0XepMbEQ" name="Logging">
+  <models xsi:type="core:COREFeatureModel" href="#_Od90UJluEeufzZ0XepMbEQ"/>
+  <models xsi:type="ram:Aspect" href="Logging.ram#_vm8nYJluEeufzZ0XepMbEQ"/>
+  <models xsi:type="ram:Aspect" href="LoggingOperationTime.ram#_tMDc0JlvEeufzZ0XepMbEQ"/>
+  <models xsi:type="ram:Aspect" href="LoggingOperationExecution.ram#_xBsmwJlxEeufzZ0XepMbEQ"/>
+  <models xsi:type="ram:Aspect" href="LoggingOptions.ram#_QN4V8JlyEeufzZ0XepMbEQ"/>
+  <models xsi:type="ram:Aspect" href="LogToScreen.ram#_cBhjIJlyEeufzZ0XepMbEQ"/>
+  <models xsi:type="ram:Aspect" href="LogToFile.ram#_D7AZoJlzEeufzZ0XepMbEQ"/>
+  <featureModel xmi:id="_Od90UJluEeufzZ0XepMbEQ" coreConcern="_Od9NQJluEeufzZ0XepMbEQ" root="_Od90UZluEeufzZ0XepMbEQ">
+    <features xmi:id="_Od90UZluEeufzZ0XepMbEQ" name="Logging" children="_Pa4vkJluEeufzZ0XepMbEQ _Q2720JluEeufzZ0XepMbEQ _SVzokJluEeufzZ0XepMbEQ">
+      <realizedBy xsi:type="ram:Aspect" href="Logging.ram#_vm8nYJluEeufzZ0XepMbEQ"/>
+      <reuses xmi:id="_NZSOxplvEeufzZ0XepMbEQ" name="Association_Loggable_Logger" selectedConfiguration="_NZSOx5lvEeufzZ0XepMbEQ">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_NZSOx5lvEeufzZ0XepMbEQ" name="Automatic selection" reuse="_NZSOxplvEeufzZ0XepMbEQ">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_EnSLwH19EeW8vqKd4iftUw"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_nEJnAACWEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_Pa4vkJluEeufzZ0XepMbEQ" name="LoggingOperationTime" parent="_Od90UZluEeufzZ0XepMbEQ" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="LoggingOperationTime.ram#_tMDc0JlvEeufzZ0XepMbEQ"/>
+    </features>
+    <features xmi:id="_Q2720JluEeufzZ0XepMbEQ" name="LoggingOperationExecution" parent="_Od90UZluEeufzZ0XepMbEQ" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="LoggingOperationExecution.ram#_xBsmwJlxEeufzZ0XepMbEQ"/>
+    </features>
+    <features xmi:id="_SVzokJluEeufzZ0XepMbEQ" name="LoggingOptions" children="_TzThUJluEeufzZ0XepMbEQ _VCyMMJluEeufzZ0XepMbEQ" parent="_Od90UZluEeufzZ0XepMbEQ" parentRelationship="Mandatory">
+      <realizedBy xsi:type="ram:Aspect" href="LoggingOptions.ram#_QN4V8JlyEeufzZ0XepMbEQ"/>
+    </features>
+    <features xmi:id="_TzThUJluEeufzZ0XepMbEQ" name="LogToScreen" parent="_SVzokJluEeufzZ0XepMbEQ" parentRelationship="OR">
+      <realizedBy xsi:type="ram:Aspect" href="LogToScreen.ram#_cBhjIJlyEeufzZ0XepMbEQ"/>
+    </features>
+    <features xmi:id="_VCyMMJluEeufzZ0XepMbEQ" name="LogToFile" parent="_SVzokJluEeufzZ0XepMbEQ" parentRelationship="OR">
+      <realizedBy xsi:type="ram:Aspect" href="LogToFile.ram#_D7AZoJlzEeufzZ0XepMbEQ"/>
+    </features>
+  </featureModel>
+</core:COREConcern>
