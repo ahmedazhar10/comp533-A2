@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_Ui7JwJlVEeu0c4-9RTJDbA" name="SimLog1&lt;SimLog1,JustLog>">
+  <structuralView xmi:id="_Ui7JwZlVEeu0c4-9RTJDbA">
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_Ui7JwplVEeu0c4-9RTJDbA" name="StackTraceElement" visibility="public" instanceClassName="java.lang.StackTraceElement">
+      <operations xmi:id="_Ui7Jw5lVEeu0c4-9RTJDbA" name="getMethodName" visibility="public" returnType="_Ui7J1JlVEeu0c4-9RTJDbA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_Ui7JxJlVEeu0c4-9RTJDbA" name="Logger" visibility="public">
+      <operations xmi:id="_Ui7JxZlVEeu0c4-9RTJDbA" name="setMessage" visibility="public" returnType="_Ui7Jz5lVEeu0c4-9RTJDbA">
+        <parameters xmi:id="_Ui7JxplVEeu0c4-9RTJDbA" name="logMessage" type="_Ui7J1JlVEeu0c4-9RTJDbA"/>
+      </operations>
+      <operations xmi:id="_Ui7Jx5lVEeu0c4-9RTJDbA" name="printMessage" visibility="public" returnType="_Ui7Jz5lVEeu0c4-9RTJDbA"/>
+      <operations xmi:id="_Ui7JyJlVEeu0c4-9RTJDbA" name="create" visibility="public" returnType="_Ui7JxJlVEeu0c4-9RTJDbA" operationType="Constructor"/>
+      <associationEnds xmi:id="_Ui7JyZlVEeu0c4-9RTJDbA" name="myLoggable" lowerBound="1" assoc="_Ui7JzplVEeu0c4-9RTJDbA"/>
+      <attributes xmi:id="_Ui7JyplVEeu0c4-9RTJDbA" name="logMessage" type="_Ui7J1JlVEeu0c4-9RTJDbA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_Ui7Jy5lVEeu0c4-9RTJDbA" name="Loggable" partiality="public" visibility="public">
+      <operations xmi:id="_Ui7JzJlVEeu0c4-9RTJDbA" name="logOp" partiality="public" visibility="public" returnType="_Ui7Jz5lVEeu0c4-9RTJDbA"/>
+      <associationEnds xmi:id="_Ui7JzZlVEeu0c4-9RTJDbA" name="myLogger" lowerBound="1" assoc="_Ui7JzplVEeu0c4-9RTJDbA"/>
+    </classes>
+    <associations xmi:id="_Ui7JzplVEeu0c4-9RTJDbA" name="Logger_Loggable" ends="_Ui7JyZlVEeu0c4-9RTJDbA _Ui7JzZlVEeu0c4-9RTJDbA"/>
+    <types xsi:type="ram:RVoid" xmi:id="_Ui7Jz5lVEeu0c4-9RTJDbA"/>
+    <types xsi:type="ram:RAny" xmi:id="_Ui7J0JlVEeu0c4-9RTJDbA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_Ui7J0ZlVEeu0c4-9RTJDbA"/>
+    <types xsi:type="ram:RInt" xmi:id="_Ui7J0plVEeu0c4-9RTJDbA"/>
+    <types xsi:type="ram:RChar" xmi:id="_Ui7J05lVEeu0c4-9RTJDbA"/>
+    <types xsi:type="ram:RString" xmi:id="_Ui7J1JlVEeu0c4-9RTJDbA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_Ui7J1ZlVEeu0c4-9RTJDbA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_Ui7J1plVEeu0c4-9RTJDbA"/>
+    <types xsi:type="ram:RLong" xmi:id="_Ui7J15lVEeu0c4-9RTJDbA"/>
+    <types xsi:type="ram:RByte" xmi:id="_Ui7J2JlVEeu0c4-9RTJDbA"/>
+  </structuralView>
+  <messageViews xsi:type="ram:AspectMessageView" xmi:id="_Ui7J2ZlVEeu0c4-9RTJDbA">
+    <pointcut href="JustLog.ram#_Y79u8JlHEeuADpCLTWLGiQ"/>
+    <advice xmi:id="_Ui7J2plVEeu0c4-9RTJDbA">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_Ui7J25lVEeu0c4-9RTJDbA" covered="_Ui7J5JlVEeu0c4-9RTJDbA" message="_Ui7J5plVEeu0c4-9RTJDbA"/>
+      <fragments xsi:type="ram:OriginalBehaviorExecution" xmi:id="_Ui7J3JlVEeu0c4-9RTJDbA" covered="_Ui7J5JlVEeu0c4-9RTJDbA"/>
+      <fragments xsi:type="ram:AssignmentStatement" xmi:id="_Ui7J3ZlVEeu0c4-9RTJDbA" covered="_Ui7J5JlVEeu0c4-9RTJDbA" assignTo="_Ui7J55lVEeu0c4-9RTJDbA">
+        <value xsi:type="ram:OpaqueExpression" xmi:id="_Ui7J3plVEeu0c4-9RTJDbA" body="new Object(){}.getClass().getEnclosingMethod().getName()" language="java"/>
+      </fragments>
+      <fragments xsi:type="ram:AssignmentStatement" xmi:id="_Ui7J35lVEeu0c4-9RTJDbA" covered="_Ui7J5JlVEeu0c4-9RTJDbA" assignTo="_Ui7J6JlVEeu0c4-9RTJDbA">
+        <value xsi:type="ram:OpaqueExpression" xmi:id="_Ui7J4JlVEeu0c4-9RTJDbA" body="methodName + &quot; has executed on object &quot; + this" language="java"/>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_Ui7J4ZlVEeu0c4-9RTJDbA" covered="_Ui7J5JlVEeu0c4-9RTJDbA" message="_Ui7J6plVEeu0c4-9RTJDbA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_Ui7J4plVEeu0c4-9RTJDbA" covered="_Ui7J5ZlVEeu0c4-9RTJDbA" message="_Ui7J6plVEeu0c4-9RTJDbA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_Ui7J45lVEeu0c4-9RTJDbA" covered="_Ui7J5JlVEeu0c4-9RTJDbA" message="_Ui7J6ZlVEeu0c4-9RTJDbA"/>
+      <lifelines xmi:id="_Ui7J5JlVEeu0c4-9RTJDbA" represents="_Ui7J7ZlVEeu0c4-9RTJDbA" coveredBy="_Ui7J25lVEeu0c4-9RTJDbA _Ui7J45lVEeu0c4-9RTJDbA _Ui7J3JlVEeu0c4-9RTJDbA _Ui7J3ZlVEeu0c4-9RTJDbA _Ui7J35lVEeu0c4-9RTJDbA _Ui7J4ZlVEeu0c4-9RTJDbA"/>
+      <lifelines xmi:id="_Ui7J5ZlVEeu0c4-9RTJDbA" represents="_Ui7JzZlVEeu0c4-9RTJDbA" coveredBy="_Ui7J4plVEeu0c4-9RTJDbA"/>
+      <messages xmi:id="_Ui7J5plVEeu0c4-9RTJDbA" sendEvent="_Ui7J7plVEeu0c4-9RTJDbA" receiveEvent="_Ui7J25lVEeu0c4-9RTJDbA" signature="_Ui7JzJlVEeu0c4-9RTJDbA">
+        <localProperties xsi:type="ram:Attribute" xmi:id="_Ui7J55lVEeu0c4-9RTJDbA" name="methodName" type="_Ui7J1JlVEeu0c4-9RTJDbA"/>
+        <localProperties xsi:type="ram:Attribute" xmi:id="_Ui7J6JlVEeu0c4-9RTJDbA" name="logMessage" type="_Ui7J1JlVEeu0c4-9RTJDbA"/>
+      </messages>
+      <messages xmi:id="_Ui7J6ZlVEeu0c4-9RTJDbA" sendEvent="_Ui7J45lVEeu0c4-9RTJDbA" receiveEvent="_Ui7J75lVEeu0c4-9RTJDbA" signature="_Ui7JzJlVEeu0c4-9RTJDbA" messageSort="reply"/>
+      <messages xmi:id="_Ui7J6plVEeu0c4-9RTJDbA" sendEvent="_Ui7J4ZlVEeu0c4-9RTJDbA" receiveEvent="_Ui7J4plVEeu0c4-9RTJDbA" signature="_Ui7JxZlVEeu0c4-9RTJDbA">
+        <arguments xmi:id="_Ui7J65lVEeu0c4-9RTJDbA" parameter="_Ui7JxplVEeu0c4-9RTJDbA">
+          <value xsi:type="ram:StructuralFeatureValue" xmi:id="_Ui7J7JlVEeu0c4-9RTJDbA" value="_Ui7J6JlVEeu0c4-9RTJDbA"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_Ui7J7ZlVEeu0c4-9RTJDbA" name="target" lowerBound="1" type="_Ui7Jy5lVEeu0c4-9RTJDbA"/>
+      <formalGates xmi:id="_Ui7J7plVEeu0c4-9RTJDbA" message="_Ui7J5plVEeu0c4-9RTJDbA" name="in_logOp"/>
+      <formalGates xmi:id="_Ui7J75lVEeu0c4-9RTJDbA" message="_Ui7J6ZlVEeu0c4-9RTJDbA" name="out_logOp"/>
+    </advice>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_Ui7J8JlVEeu0c4-9RTJDbA" specifies="_Ui7JxZlVEeu0c4-9RTJDbA">
+    <specification xmi:id="_Ui7J8ZlVEeu0c4-9RTJDbA">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_Ui7J8plVEeu0c4-9RTJDbA" covered="_Ui7J-JlVEeu0c4-9RTJDbA" message="_Ui7J-ZlVEeu0c4-9RTJDbA"/>
+      <fragments xsi:type="ram:AssignmentStatement" xmi:id="_Ui7J85lVEeu0c4-9RTJDbA" covered="_Ui7J-JlVEeu0c4-9RTJDbA" assignTo="_Ui7JyplVEeu0c4-9RTJDbA">
+        <value xsi:type="ram:OpaqueExpression" xmi:id="_Ui7J9JlVEeu0c4-9RTJDbA" body="logMessage" language="java"/>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_Ui7J9ZlVEeu0c4-9RTJDbA" covered="_Ui7J-JlVEeu0c4-9RTJDbA" message="_Ui7J-5lVEeu0c4-9RTJDbA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_Ui7J9plVEeu0c4-9RTJDbA" covered="_Ui7J-JlVEeu0c4-9RTJDbA" message="_Ui7J-5lVEeu0c4-9RTJDbA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_Ui7J95lVEeu0c4-9RTJDbA" covered="_Ui7J-JlVEeu0c4-9RTJDbA" message="_Ui7J-plVEeu0c4-9RTJDbA"/>
+      <lifelines xmi:id="_Ui7J-JlVEeu0c4-9RTJDbA" represents="_Ui7J_JlVEeu0c4-9RTJDbA" coveredBy="_Ui7J8plVEeu0c4-9RTJDbA _Ui7J95lVEeu0c4-9RTJDbA _Ui7J85lVEeu0c4-9RTJDbA _Ui7J9ZlVEeu0c4-9RTJDbA _Ui7J9plVEeu0c4-9RTJDbA"/>
+      <messages xmi:id="_Ui7J-ZlVEeu0c4-9RTJDbA" sendEvent="_Ui7J_ZlVEeu0c4-9RTJDbA" receiveEvent="_Ui7J8plVEeu0c4-9RTJDbA" signature="_Ui7JxZlVEeu0c4-9RTJDbA"/>
+      <messages xmi:id="_Ui7J-plVEeu0c4-9RTJDbA" sendEvent="_Ui7J95lVEeu0c4-9RTJDbA" receiveEvent="_Ui7J_plVEeu0c4-9RTJDbA" signature="_Ui7JxZlVEeu0c4-9RTJDbA" messageSort="reply"/>
+      <messages xmi:id="_Ui7J-5lVEeu0c4-9RTJDbA" sendEvent="_Ui7J9ZlVEeu0c4-9RTJDbA" receiveEvent="_Ui7J9plVEeu0c4-9RTJDbA" signature="_Ui7Jx5lVEeu0c4-9RTJDbA"/>
+      <properties xmi:id="_Ui7J_JlVEeu0c4-9RTJDbA" name="target" lowerBound="1" type="_Ui7JxJlVEeu0c4-9RTJDbA"/>
+      <formalGates xmi:id="_Ui7J_ZlVEeu0c4-9RTJDbA" message="_Ui7J-ZlVEeu0c4-9RTJDbA" name="in_setMessage"/>
+      <formalGates xmi:id="_Ui7J_plVEeu0c4-9RTJDbA" message="_Ui7J-plVEeu0c4-9RTJDbA" name="out_setMessage"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_Ui7J_5lVEeu0c4-9RTJDbA" specifies="_Ui7Jx5lVEeu0c4-9RTJDbA">
+    <specification xmi:id="_Ui7KAJlVEeu0c4-9RTJDbA">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_Ui7KAZlVEeu0c4-9RTJDbA" covered="_Ui7KBZlVEeu0c4-9RTJDbA" message="_Ui7KBplVEeu0c4-9RTJDbA"/>
+      <fragments xsi:type="ram:ExecutionStatement" xmi:id="_Ui7KAplVEeu0c4-9RTJDbA" covered="_Ui7KBZlVEeu0c4-9RTJDbA">
+        <specification xsi:type="ram:OpaqueExpression" xmi:id="_Ui7KA5lVEeu0c4-9RTJDbA" body="System.out.println(this.logMessage)" language="java"/>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_Ui7KBJlVEeu0c4-9RTJDbA" covered="_Ui7KBZlVEeu0c4-9RTJDbA" message="_Ui7KB5lVEeu0c4-9RTJDbA"/>
+      <lifelines xmi:id="_Ui7KBZlVEeu0c4-9RTJDbA" represents="_Ui7KCJlVEeu0c4-9RTJDbA" coveredBy="_Ui7KAZlVEeu0c4-9RTJDbA _Ui7KBJlVEeu0c4-9RTJDbA _Ui7KAplVEeu0c4-9RTJDbA"/>
+      <messages xmi:id="_Ui7KBplVEeu0c4-9RTJDbA" sendEvent="_Ui7KCZlVEeu0c4-9RTJDbA" receiveEvent="_Ui7KAZlVEeu0c4-9RTJDbA" signature="_Ui7Jx5lVEeu0c4-9RTJDbA"/>
+      <messages xmi:id="_Ui7KB5lVEeu0c4-9RTJDbA" sendEvent="_Ui7KBJlVEeu0c4-9RTJDbA" receiveEvent="_Ui7KCplVEeu0c4-9RTJDbA" signature="_Ui7Jx5lVEeu0c4-9RTJDbA" messageSort="reply"/>
+      <properties xmi:id="_Ui7KCJlVEeu0c4-9RTJDbA" name="target" lowerBound="1" type="_Ui7JxJlVEeu0c4-9RTJDbA"/>
+      <formalGates xmi:id="_Ui7KCZlVEeu0c4-9RTJDbA" message="_Ui7KBplVEeu0c4-9RTJDbA" name="in_printMessage"/>
+      <formalGates xmi:id="_Ui7KCplVEeu0c4-9RTJDbA" message="_Ui7KB5lVEeu0c4-9RTJDbA" name="out_printMessage"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_Ui7KC5lVEeu0c4-9RTJDbA" affectedBy="_Ui7J2ZlVEeu0c4-9RTJDbA" specifies="_Ui7JzJlVEeu0c4-9RTJDbA"/>
+  <layout xmi:id="_Ui7KDJlVEeu0c4-9RTJDbA">
+    <containers xmi:id="_Ui7KDZlVEeu0c4-9RTJDbA" key="_Ui7JwZlVEeu0c4-9RTJDbA"/>
+  </layout>
+  <wovenAspects xmi:id="_Ui7KDplVEeu0c4-9RTJDbA" name="SimLog1">
+    <comesFrom href="SimLog1.ram#_qFBMgJlFEeuADpCLTWLGiQ"/>
+    <wovenElements xmi:id="_Ui7KD5lVEeu0c4-9RTJDbA" key="_Ui7JyJlVEeu0c4-9RTJDbA">
+      <value xsi:type="ram:Operation" href="SimLog1.ram#_P4wLkJlTEeuADpCLTWLGiQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_Ui7KEJlVEeu0c4-9RTJDbA" key="_Ui7JxJlVEeu0c4-9RTJDbA">
+      <value xsi:type="ram:Class" href="SimLog1.ram#_qFBMg5lFEeuADpCLTWLGiQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_Ui7KEZlVEeu0c4-9RTJDbA" key="_Ui7Jy5lVEeu0c4-9RTJDbA">
+      <value xsi:type="ram:Class" href="SimLog1.ram#_qFBMgplFEeuADpCLTWLGiQ"/>
+    </wovenElements>
+  </wovenAspects>
+  <wovenAspects xmi:id="_Ui7KEplVEeu0c4-9RTJDbA" name="JustLog">
+    <comesFrom href="JustLog.ram#_d0VBgJlGEeuADpCLTWLGiQ"/>
+    <wovenElements xmi:id="_Ui7KE5lVEeu0c4-9RTJDbA" key="_Ui7Jw5lVEeu0c4-9RTJDbA">
+      <value xsi:type="ram:Operation" href="JustLog.ram#_d0VBhJlGEeuADpCLTWLGiQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_Ui7KFJlVEeu0c4-9RTJDbA" key="_Ui7JwplVEeu0c4-9RTJDbA">
+      <value xsi:type="ram:ImplementationClass" href="JustLog.ram#_d0VBg5lGEeuADpCLTWLGiQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_Ui7KFZlVEeu0c4-9RTJDbA" key="_Ui7JzJlVEeu0c4-9RTJDbA">
+      <value xsi:type="ram:Operation" href="JustLog.ram#_Y79u8JlHEeuADpCLTWLGiQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_Ui7KFplVEeu0c4-9RTJDbA" key="_Ui7Jx5lVEeu0c4-9RTJDbA">
+      <value xsi:type="ram:Operation" href="JustLog.ram#_7WEoIJlGEeuADpCLTWLGiQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_Ui7KF5lVEeu0c4-9RTJDbA" key="_Ui7JxJlVEeu0c4-9RTJDbA">
+      <value xsi:type="ram:Class" href="JustLog.ram#_lzhFoJlGEeuADpCLTWLGiQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_Ui7KGJlVEeu0c4-9RTJDbA" key="_Ui7JyplVEeu0c4-9RTJDbA">
+      <value xsi:type="ram:Attribute" href="JustLog.ram#_u0NqEJlGEeuADpCLTWLGiQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_Ui7KGZlVEeu0c4-9RTJDbA" key="_Ui7JxZlVEeu0c4-9RTJDbA">
+      <value xsi:type="ram:Operation" href="JustLog.ram#_yfdz0JlGEeuADpCLTWLGiQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_Ui7KGplVEeu0c4-9RTJDbA" key="_Ui7Jy5lVEeu0c4-9RTJDbA">
+      <value xsi:type="ram:Class" href="JustLog.ram#_d0VBgplGEeuADpCLTWLGiQ"/>
+    </wovenElements>
+  </wovenAspects>
+</ram:Aspect>
