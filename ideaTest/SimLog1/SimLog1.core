@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_TTk1AJlFEeuADpCLTWLGiQ" name="SimLog1">
+  <models xsi:type="core:COREFeatureModel" href="#_TTk1AZlFEeuADpCLTWLGiQ"/>
+  <models xsi:type="ram:Aspect" href="SimLog1.ram#_qFBMgJlFEeuADpCLTWLGiQ"/>
+  <models xsi:type="ram:Aspect" href="JustLog.ram#_d0VBgJlGEeuADpCLTWLGiQ"/>
+  <featureModel xmi:id="_TTk1AZlFEeuADpCLTWLGiQ" coreConcern="_TTk1AJlFEeuADpCLTWLGiQ" root="_TTk1AplFEeuADpCLTWLGiQ">
+    <features xmi:id="_TTk1AplFEeuADpCLTWLGiQ" name="SimLog1" children="_VXLrgJlFEeuADpCLTWLGiQ">
+      <realizedBy xsi:type="ram:Aspect" href="SimLog1.ram#_qFBMgJlFEeuADpCLTWLGiQ"/>
+    </features>
+    <features xmi:id="_VXLrgJlFEeuADpCLTWLGiQ" name="JustLog" parent="_TTk1AplFEeuADpCLTWLGiQ" parentRelationship="Mandatory">
+      <realizedBy xsi:type="ram:Aspect" href="JustLog.ram#_d0VBgJlGEeuADpCLTWLGiQ"/>
+    </features>
+  </featureModel>
+</core:COREConcern>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_qFBMgJlFEeuADpCLTWLGiQ" name="SimLog1">
+  <realizes href="SimLog1.core#_TTk1AplFEeuADpCLTWLGiQ"/>
+  <coreConcern href="SimLog1.core#_TTk1AJlFEeuADpCLTWLGiQ"/>
+  <structuralView xmi:id="_qFBMgZlFEeuADpCLTWLGiQ">
+    <classes xsi:type="ram:Class" xmi:id="_qFBMgplFEeuADpCLTWLGiQ" name="Loggable" partiality="public">
+      <associationEnds xmi:id="_qyMbkZlFEeuADpCLTWLGiQ" name="myLogger" lowerBound="1" assoc="_qyNCoJlFEeuADpCLTWLGiQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_qFBMg5lFEeuADpCLTWLGiQ" name="Logger" visibility="public">
+      <operations xmi:id="_P4wLkJlTEeuADpCLTWLGiQ" name="create" visibility="public" returnType="_qFBMg5lFEeuADpCLTWLGiQ" operationType="Constructor"/>
+      <associationEnds xmi:id="_qyMbkJlFEeuADpCLTWLGiQ" name="myLoggable" lowerBound="1" assoc="_qyNCoJlFEeuADpCLTWLGiQ"/>
+    </classes>
+    <associations xmi:id="_qyNCoJlFEeuADpCLTWLGiQ" name="Logger_Loggable" ends="_qyMbkJlFEeuADpCLTWLGiQ _qyMbkZlFEeuADpCLTWLGiQ"/>
+    <types xsi:type="ram:RVoid" xmi:id="_qFBMhJlFEeuADpCLTWLGiQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_qFBMhZlFEeuADpCLTWLGiQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_qFBMhplFEeuADpCLTWLGiQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_qFBMh5lFEeuADpCLTWLGiQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_qFBMiJlFEeuADpCLTWLGiQ"/>
+    <types xsi:type="ram:RString" xmi:id="_qFBMiZlFEeuADpCLTWLGiQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_qFBMiplFEeuADpCLTWLGiQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_qFBMi5lFEeuADpCLTWLGiQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_qFBMjJlFEeuADpCLTWLGiQ"/>
+    <types xsi:type="ram:RByte" xmi:id="_qFBMjZlFEeuADpCLTWLGiQ"/>
+  </structuralView>
+  <layout xmi:id="_qFCaoJlFEeuADpCLTWLGiQ">
+    <containers xmi:id="_qFCaoZlFEeuADpCLTWLGiQ" key="_qFBMgZlFEeuADpCLTWLGiQ">
+      <value xmi:id="_qFCaoplFEeuADpCLTWLGiQ" key="_qFBMgplFEeuADpCLTWLGiQ">
+        <value xmi:id="_qFCao5lFEeuADpCLTWLGiQ" x="122.99985" y="367.00012"/>
+      </value>
+      <value xmi:id="_qFCapJlFEeuADpCLTWLGiQ" key="_qFBMg5lFEeuADpCLTWLGiQ">
+        <value xmi:id="_qFCapZlFEeuADpCLTWLGiQ" x="698.9998" y="367.00012"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>
