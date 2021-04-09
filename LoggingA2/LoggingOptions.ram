@@ -3,6 +3,9 @@
   <realizes href="LoggingA2.core#_ln8fMJfPEeuXjqog77XYRA"/>
   <coreConcern href="LoggingA2.core#_fpRhUJfPEeuXjqog77XYRA"/>
   <structuralView xmi:id="_j3PJ8ZioEeu6Yf5fZZ3drA">
+    <classes xsi:type="ram:Class" xmi:id="_AvhjEJjZEeuKy6pvFQgPaQ" name="Logger" visibility="public">
+      <operations xmi:id="_EXu_4JjZEeuKy6pvFQgPaQ" name="create" visibility="public" returnType="_AvhjEJjZEeuKy6pvFQgPaQ" operationType="Constructor"/>
+    </classes>
     <types xsi:type="ram:RVoid" xmi:id="_j3PJ8pioEeu6Yf5fZZ3drA"/>
     <types xsi:type="ram:RAny" xmi:id="_j3PJ85ioEeu6Yf5fZZ3drA"/>
     <types xsi:type="ram:RBoolean" xmi:id="_j3PJ9JioEeu6Yf5fZZ3drA"/>
@@ -18,6 +21,10 @@
     <source xsi:type="ram:Aspect" href="LoggingA2.ram#_f-FeQJfQEeuXjqog77XYRA"/>
   </instantiations>
   <layout xmi:id="_j3PJ_ZioEeu6Yf5fZZ3drA">
-    <containers xmi:id="_j3PJ_pioEeu6Yf5fZZ3drA" key="_j3PJ8ZioEeu6Yf5fZZ3drA"/>
+    <containers xmi:id="_j3PJ_pioEeu6Yf5fZZ3drA" key="_j3PJ8ZioEeu6Yf5fZZ3drA">
+      <value xmi:id="_AviKIJjZEeuKy6pvFQgPaQ" key="_AvhjEJjZEeuKy6pvFQgPaQ">
+        <value xmi:id="_AviKIZjZEeuKy6pvFQgPaQ" x="364.99988" y="203.00003"/>
+      </value>
+    </containers>
   </layout>
 </ram:Aspect>

@@ -7,12 +7,27 @@
       <operations xmi:id="_e0YpM5iqEeu6Yf5fZZ3drA" name="setFile" visibility="public" returnType="_e0YpOZiqEeu6Yf5fZZ3drA">
         <parameters xmi:id="_e0YpNJiqEeu6Yf5fZZ3drA" name="enable" type="_e0YpO5iqEeu6Yf5fZZ3drA"/>
       </operations>
-      <operations xmi:id="_e0YpNZiqEeu6Yf5fZZ3drA" name="writeLogMessage" visibility="public" returnType="_e0YpOZiqEeu6Yf5fZZ3drA">
+      <operations xmi:id="_e0YpNZiqEeu6Yf5fZZ3drA" name="logToFile" visibility="public" returnType="_e0YpOZiqEeu6Yf5fZZ3drA">
         <parameters xmi:id="_e0YpNpiqEeu6Yf5fZZ3drA" name="LogMessage" type="_e0YpPpiqEeu6Yf5fZZ3drA"/>
         <parameters xmi:id="_e0YpN5iqEeu6Yf5fZZ3drA" name="filepath" type="_e0YpPpiqEeu6Yf5fZZ3drA"/>
       </operations>
       <attributes xmi:id="_e0YpOJiqEeu6Yf5fZZ3drA" name="fileEnabled" type="_e0YpO5iqEeu6Yf5fZZ3drA"/>
     </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_9Ucc8JjQEeuKy6pvFQgPaQ" name="Exception" visibility="public" instanceClassName="java.lang.Exception">
+      <operations xmi:id="_-pQTwJjQEeuKy6pvFQgPaQ" name="printStackTrace" visibility="public" returnType="_e0YpOZiqEeu6Yf5fZZ3drA"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_j5srcJjREeuKy6pvFQgPaQ" name="BufferedWriter" visibility="public" superTypes="_qdjaAJjREeuKy6pvFQgPaQ" instanceClassName="java.io.BufferedWriter">
+      <operations xmi:id="_qdl2QJjREeuKy6pvFQgPaQ" name="BufferedWriter" visibility="public" returnType="_j5srcJjREeuKy6pvFQgPaQ" operationType="Constructor">
+        <parameters xmi:id="_qdl2QZjREeuKy6pvFQgPaQ" name="arg0" type="_qdjaAJjREeuKy6pvFQgPaQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_l1dNgJjREeuKy6pvFQgPaQ" name="FileWriter" visibility="public" instanceClassName="java.io.FileWriter">
+      <operations xmi:id="_wVWT0JjREeuKy6pvFQgPaQ" name="FileWriter" visibility="public" returnType="_l1dNgJjREeuKy6pvFQgPaQ" operationType="Constructor">
+        <parameters xmi:id="_wVWT0ZjREeuKy6pvFQgPaQ" name="arg0" type="_e0YpPpiqEeu6Yf5fZZ3drA"/>
+        <parameters xmi:id="_wVWT0pjREeuKy6pvFQgPaQ" name="arg1" type="_e0YpO5iqEeu6Yf5fZZ3drA"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_qdjaAJjREeuKy6pvFQgPaQ" name="Writer" instanceClassName="java.io.Writer"/>
     <types xsi:type="ram:RVoid" xmi:id="_e0YpOZiqEeu6Yf5fZZ3drA"/>
     <types xsi:type="ram:RAny" xmi:id="_e0YpOpiqEeu6Yf5fZZ3drA"/>
     <types xsi:type="ram:RBoolean" xmi:id="_e0YpO5iqEeu6Yf5fZZ3drA"/>
@@ -24,13 +39,73 @@
     <types xsi:type="ram:RLong" xmi:id="_e0YpQZiqEeu6Yf5fZZ3drA"/>
     <types xsi:type="ram:RByte" xmi:id="_e0YpQpiqEeu6Yf5fZZ3drA"/>
   </structuralView>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_zVokE5jIEeuKy6pvFQgPaQ" specifies="_e0YpM5iqEeu6Yf5fZZ3drA">
+    <specification xmi:id="_zVokFJjIEeuKy6pvFQgPaQ">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_zVokFZjIEeuKy6pvFQgPaQ" covered="_zVokF5jIEeuKy6pvFQgPaQ" message="_zVokGJjIEeuKy6pvFQgPaQ"/>
+      <fragments xsi:type="ram:AssignmentStatement" xmi:id="_1Cr7wJjIEeuKy6pvFQgPaQ" covered="_zVokF5jIEeuKy6pvFQgPaQ" assignTo="_e0YpOJiqEeu6Yf5fZZ3drA">
+        <value xsi:type="ram:OpaqueExpression" xmi:id="_1Cr7wZjIEeuKy6pvFQgPaQ" body=" enable" language="java"/>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_zVokFpjIEeuKy6pvFQgPaQ" covered="_zVokF5jIEeuKy6pvFQgPaQ" message="_zVokGZjIEeuKy6pvFQgPaQ"/>
+      <lifelines xmi:id="_zVokF5jIEeuKy6pvFQgPaQ" represents="_zVokGpjIEeuKy6pvFQgPaQ" coveredBy="_zVokFZjIEeuKy6pvFQgPaQ _zVokFpjIEeuKy6pvFQgPaQ _1Cr7wJjIEeuKy6pvFQgPaQ"/>
+      <messages xmi:id="_zVokGJjIEeuKy6pvFQgPaQ" sendEvent="_zVokG5jIEeuKy6pvFQgPaQ" receiveEvent="_zVokFZjIEeuKy6pvFQgPaQ" signature="_e0YpM5iqEeu6Yf5fZZ3drA"/>
+      <messages xmi:id="_zVokGZjIEeuKy6pvFQgPaQ" sendEvent="_zVokFpjIEeuKy6pvFQgPaQ" receiveEvent="_zVokHJjIEeuKy6pvFQgPaQ" signature="_e0YpM5iqEeu6Yf5fZZ3drA" messageSort="reply"/>
+      <properties xmi:id="_zVokGpjIEeuKy6pvFQgPaQ" name="target" lowerBound="1" type="_e0YpMpiqEeu6Yf5fZZ3drA"/>
+      <formalGates xmi:id="_zVokG5jIEeuKy6pvFQgPaQ" message="_zVokGJjIEeuKy6pvFQgPaQ" name="in_setFile"/>
+      <formalGates xmi:id="_zVokHJjIEeuKy6pvFQgPaQ" message="_zVokGZjIEeuKy6pvFQgPaQ" name="out_setFile"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_gENdE5jQEeuKy6pvFQgPaQ" specifies="_e0YpNZiqEeu6Yf5fZZ3drA">
+    <specification xmi:id="_gENdFJjQEeuKy6pvFQgPaQ">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_gENdFZjQEeuKy6pvFQgPaQ" covered="_gENdF5jQEeuKy6pvFQgPaQ" message="_gENdGJjQEeuKy6pvFQgPaQ"/>
+      <fragments xsi:type="ram:AssignmentStatement" xmi:id="_ChJV4JjSEeuKy6pvFQgPaQ" covered="_gENdF5jQEeuKy6pvFQgPaQ" assignTo="_mvp6AJjTEeuKy6pvFQgPaQ">
+        <value xsi:type="ram:OpaqueExpression" xmi:id="_ChJV4ZjSEeuKy6pvFQgPaQ" body="new BufferedWriter(new FileWrite(filepath, true))" language="java"/>
+      </fragments>
+      <fragments xsi:type="ram:ExecutionStatement" xmi:id="_qEbdcJjTEeuKy6pvFQgPaQ" covered="_gENdF5jQEeuKy6pvFQgPaQ">
+        <specification xsi:type="ram:OpaqueExpression" xmi:id="_qEbdcZjTEeuKy6pvFQgPaQ" body="writer.append(LogMessage)" language="java"/>
+      </fragments>
+      <fragments xsi:type="ram:ExecutionStatement" xmi:id="_tYvt4JjTEeuKy6pvFQgPaQ" covered="_gENdF5jQEeuKy6pvFQgPaQ">
+        <specification xsi:type="ram:OpaqueExpression" xmi:id="_tYvt4ZjTEeuKy6pvFQgPaQ" body="writer.close()" language="java"/>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_gENdFpjQEeuKy6pvFQgPaQ" covered="_gENdF5jQEeuKy6pvFQgPaQ" message="_gENdGZjQEeuKy6pvFQgPaQ"/>
+      <lifelines xmi:id="_gENdF5jQEeuKy6pvFQgPaQ" represents="_gENdGpjQEeuKy6pvFQgPaQ" coveredBy="_gENdFZjQEeuKy6pvFQgPaQ _gENdFpjQEeuKy6pvFQgPaQ _ChJV4JjSEeuKy6pvFQgPaQ _qEbdcJjTEeuKy6pvFQgPaQ _tYvt4JjTEeuKy6pvFQgPaQ"/>
+      <messages xmi:id="_gENdGJjQEeuKy6pvFQgPaQ" sendEvent="_gENdG5jQEeuKy6pvFQgPaQ" receiveEvent="_gENdFZjQEeuKy6pvFQgPaQ" signature="_e0YpNZiqEeu6Yf5fZZ3drA">
+        <localProperties xsi:type="ram:Reference" xmi:id="_mvp6AJjTEeuKy6pvFQgPaQ" name="writer" lowerBound="1" type="_j5srcJjREeuKy6pvFQgPaQ"/>
+      </messages>
+      <messages xmi:id="_gENdGZjQEeuKy6pvFQgPaQ" sendEvent="_gENdFpjQEeuKy6pvFQgPaQ" receiveEvent="_gENdHJjQEeuKy6pvFQgPaQ" signature="_e0YpNZiqEeu6Yf5fZZ3drA" messageSort="reply"/>
+      <properties xmi:id="_gENdGpjQEeuKy6pvFQgPaQ" name="target" lowerBound="1" type="_e0YpMpiqEeu6Yf5fZZ3drA"/>
+      <formalGates xmi:id="_gENdG5jQEeuKy6pvFQgPaQ" message="_gENdGJjQEeuKy6pvFQgPaQ" name="in_logToFile"/>
+      <formalGates xmi:id="_gENdHJjQEeuKy6pvFQgPaQ" message="_gENdGZjQEeuKy6pvFQgPaQ" name="out_logToFile"/>
+    </specification>
+  </messageViews>
   <instantiations xmi:id="_e0YpQ5iqEeu6Yf5fZZ3drA">
     <source xsi:type="ram:Aspect" href="LoggingOptions.ram#_j3PJ8JioEeu6Yf5fZZ3drA"/>
   </instantiations>
   <layout xmi:id="_e0YpRJiqEeu6Yf5fZZ3drA">
     <containers xmi:id="_e0YpRZiqEeu6Yf5fZZ3drA" key="_e0YpMZiqEeu6Yf5fZZ3drA">
       <value xmi:id="_e0YpRpiqEeu6Yf5fZZ3drA" key="_e0YpMpiqEeu6Yf5fZZ3drA">
-        <value xmi:id="_e0YpR5iqEeu6Yf5fZZ3drA" x="508.00006" y="234.0"/>
+        <value xmi:id="_e0YpR5iqEeu6Yf5fZZ3drA" x="219.00003" y="239.99997"/>
+      </value>
+      <value xmi:id="_9UdrEJjQEeuKy6pvFQgPaQ" key="_9Ucc8JjQEeuKy6pvFQgPaQ">
+        <value xmi:id="_9UdrEZjQEeuKy6pvFQgPaQ" x="-63.646606" y="261.99997"/>
+      </value>
+      <value xmi:id="_j5tSgJjREeuKy6pvFQgPaQ" key="_j5srcJjREeuKy6pvFQgPaQ">
+        <value xmi:id="_j5tSgZjREeuKy6pvFQgPaQ" x="227.44196" y="552.93964"/>
+      </value>
+      <value xmi:id="_l1d0kJjREeuKy6pvFQgPaQ" key="_l1dNgJjREeuKy6pvFQgPaQ">
+        <value xmi:id="_l1d0kZjREeuKy6pvFQgPaQ" x="516.85345" y="552.977"/>
+      </value>
+      <value xmi:id="_qdkBEJjREeuKy6pvFQgPaQ" key="_qdjaAJjREeuKy6pvFQgPaQ">
+        <value xmi:id="_qdkBEZjREeuKy6pvFQgPaQ" x="-33.146606" y="552.93964"/>
+      </value>
+    </containers>
+    <containers xmi:id="_zVokEJjIEeuKy6pvFQgPaQ" key="_zVokE5jIEeuKy6pvFQgPaQ">
+      <value xmi:id="_zVokEZjIEeuKy6pvFQgPaQ" key="_zVokF5jIEeuKy6pvFQgPaQ">
+        <value xmi:id="_zVokEpjIEeuKy6pvFQgPaQ" x="100.0" y="100.0"/>
+      </value>
+    </containers>
+    <containers xmi:id="_gENdEJjQEeuKy6pvFQgPaQ" key="_gENdE5jQEeuKy6pvFQgPaQ">
+      <value xmi:id="_gENdEZjQEeuKy6pvFQgPaQ" key="_gENdF5jQEeuKy6pvFQgPaQ">
+        <value xmi:id="_gENdEpjQEeuKy6pvFQgPaQ" x="100.0" y="100.0"/>
       </value>
     </containers>
   </layout>
